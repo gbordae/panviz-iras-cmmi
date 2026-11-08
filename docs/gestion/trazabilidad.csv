@@ -4,4 +4,5 @@ R02,docs/requisitos/diseno.md,src/panviz/validador.py,"PR-02, PR-03, PR-04 (test
 R03,docs/requisitos/diseno.md,src/panviz/consolidador.py,PR-05 (tests/test_consolidacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
 R04,docs/requisitos/diseno.md,src/panviz/exportador.py,PR-06 (tests/test_reconciliacion_exportacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
 R05,docs/gestion/trazabilidad.csv,pendiente,pendiente,pendiente,pendiente
+CR01,pendiente,pendiente,pendiente,pendiente,solicitado - sin aprobar
 
