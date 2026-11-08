@@ -56,3 +56,4 @@ regla de cambios del proceso estándar v1.0 (`plantilla_cambio.md`).
 - [ ] Acta de validación cerrada
 - [ ] Evidencias registradas en `indice_evidencias.csv`
 - [ ] Etiqueta Git creada
+

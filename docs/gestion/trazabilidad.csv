@@ -1,7 +1,7 @@
 requisito,diseno,codigo,prueba,version,estado
-R01,pendiente,pendiente,pendiente,pendiente,pendiente
-R02,pendiente,pendiente,pendiente,pendiente,pendiente
-R03,pendiente,pendiente,pendiente,pendiente,pendiente
-R04,pendiente,pendiente,pendiente,pendiente,pendiente
-R05,pendiente,pendiente,pendiente,pendiente,pendiente
+R01,docs/requisitos/diseno.md,src/panviz/importador.py,pendiente,pendiente,implementado - sin verificar
+R02,docs/requisitos/diseno.md,src/panviz/validador.py,pendiente,pendiente,implementado - sin verificar
+R03,docs/requisitos/diseno.md,src/panviz/consolidador.py,pendiente,pendiente,implementado - sin verificar
+R04,docs/requisitos/diseno.md,src/panviz/exportador.py,pendiente,pendiente,implementado - sin verificar
+R05,docs/gestion/trazabilidad.csv,pendiente,pendiente,pendiente,pendiente
 

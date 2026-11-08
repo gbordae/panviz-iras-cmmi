@@ -202,3 +202,4 @@ sin modificar el pipeline de validación ni el exportador.
 > **CR01 no está tramitado.** No se implementa ningún filtro por distrito en esta versión.
 > Cuando se tramite, se agregará como parámetro opcional o como etapa intermedia
 > entre `consolidar()` y `exportar()`, sin romper la interfaz existente.
+

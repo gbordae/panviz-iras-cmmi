@@ -99,3 +99,4 @@ de las reglas son prioritarias para un piloto CMMI DEV v1.3.
 
 Si el equipo decide otra alternativa, el cambio se documentará en este mismo
 archivo con los campos "Decisor final" y "Fecha de confirmación" completados.
+

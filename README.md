@@ -34,7 +34,15 @@ python -m pip install pytest
 python -m pytest -q
 ```
 
+## Uso
+
+```powershell
+# PowerShell — desde la raíz del proyecto
+$env:PYTHONPATH = "src"
+python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evidencias\ejecucion_v0
+```
+
 ## Estado
 
-**En construcción**
+**Componente v0 en rama `feature/componente-iras`, pendiente de revisión (E2 y E4)**
 

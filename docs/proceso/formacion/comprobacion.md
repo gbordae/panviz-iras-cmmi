@@ -38,3 +38,4 @@
 
 - [ ] Localiza `plantilla_no_conformidad.md` y explica qué debe contener "verificación de cierre".
 - [ ] Realizada: ☐
+

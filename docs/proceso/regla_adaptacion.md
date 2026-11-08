@@ -80,3 +80,4 @@ El piloto actual corresponde íntegramente al **Caso A** (importación CSV).
 > en Markdown** (una página por plantilla) almacenadas en `docs/proceso/plantillas/`.
 > Esto reduce la fricción de adopción y mantiene los documentos versionados en Git
 > junto al código, facilitando la trazabilidad sin infraestructura adicional.
+

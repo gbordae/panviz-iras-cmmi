@@ -13,3 +13,4 @@
 ## Notas
 
 _(Referencia al oráculo, condiciones especiales, datos de prueba usados)_
+
