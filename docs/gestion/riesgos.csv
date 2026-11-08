@@ -2,3 +2,4 @@ id,riesgo,probabilidad,impacto,respuesta,dueno,estado
 R-01,Cronograma comprimido y baja disponibilidad del equipo para revisiones,Alta,Alta,Priorizar revisiones cruzadas en sesiones cortas (maximo 30 min); usar plantilla_revision.md como lista de chequeo rapido; E1 escala si una revision bloquea el avance mas de un dia,E1 Borda Espinoza Gabriela,abierto
 R-02,Datos sinteticos que no representan casos reales de calidad de datos (sesgo del oraculo),Media,Media,Documentar explicitamente los supuestos del oraculo en catalogo_datos.md; E2 revisa con al menos un caso limite adicional por regla antes del cierre de B1,E2 Meza Vizcarra Cielo,abierto
 R-03,Cambio de reglas (CR01) sin regresion que rompa funciones previas,Alta,Alta,E4 define el plan de regresion antes de que E1 apruebe cualquier CR; suite de pruebas existente se reejecutara completa tras cada cambio; rama cambio/CR01 no se fusiona sin pytest verde,E4 Suclle Suca Michael,abierto
+

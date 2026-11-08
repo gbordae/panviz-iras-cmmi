@@ -1,7 +1,8 @@
 requisito,diseno,codigo,prueba,version,estado
-R01,pendiente,pendiente,pendiente,pendiente,pendiente
-R02,pendiente,pendiente,pendiente,pendiente,pendiente
-R03,pendiente,pendiente,pendiente,pendiente,pendiente
-R04,pendiente,pendiente,pendiente,pendiente,pendiente
-R05,pendiente,pendiente,pendiente,pendiente,pendiente
+R01,docs/requisitos/diseno.md,src/panviz/importador.py,PR-01 (tests/test_importacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
+R02,docs/requisitos/diseno.md,src/panviz/validador.py,"PR-02, PR-03, PR-04 (tests/test_validacion.py)",pendiente,verificado por pruebas - pendiente de revision de codigo
+R03,docs/requisitos/diseno.md,src/panviz/consolidador.py,PR-05 (tests/test_consolidacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
+R04,docs/requisitos/diseno.md,src/panviz/exportador.py,PR-06 (tests/test_reconciliacion_exportacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
+R05,docs/gestion/trazabilidad.csv,pendiente,pendiente,pendiente,pendiente
+CR01,pendiente,pendiente,pendiente,pendiente,solicitado - sin aprobar
 

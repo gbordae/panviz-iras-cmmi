@@ -30,11 +30,19 @@ python -m venv .venv
 # Instalar dependencias
 python -m pip install pytest
 
-# Ejecutar pruebas en modo silencioso
-python -m pytest -q
+# Ejecutar pruebas unitarias y de integración
+python -m pytest -q -v
+```
+
+## Uso
+
+```powershell
+# PowerShell — desde la raíz del proyecto
+$env:PYTHONPATH = "src"
+python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evidencias\ejecucion_v0
 ```
 
 ## Estado
 
-**En construcción**
+**Verificado por pruebas (PR-01 a PR-06) en rama `feature/componente-iras`, pendiente de revisión de código (B1)**
 

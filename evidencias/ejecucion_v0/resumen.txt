@@ -1,0 +1,5 @@
+leidas: 20
+aceptadas: 15
+rechazadas: 5
+suma_consolidado: 15
+diferencia_reconciliacion: 0

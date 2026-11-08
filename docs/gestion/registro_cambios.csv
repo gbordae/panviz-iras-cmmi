@@ -1,2 +1,3 @@
 id,descripcion,solicitante,fecha,impacto,decision,aprobador,version_afectada,estado
+CR01,Filtro por distrito (--distrito <nombre>) al consolidar,E2 (pendiente de confirmacion),2026-11-08,cli.py consolidador.py resumen.txt diseno.md plan_pruebas.md,,,,borrador
 

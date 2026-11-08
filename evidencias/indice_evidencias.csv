@@ -21,4 +21,17 @@ EV19,OT,docs/proceso/formacion/guia_formacion_15min.md,1.0,E1 Borda Espinoza Gab
 EV20,OT,docs/proceso/formacion/comprobacion.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
 EV21,OT,docs/proceso/formacion/registro_asistencia.csv,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
 EV22,RSKM,docs/gestion/riesgos.csv,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV23,DAR,docs/gestion/decision_dar01.md,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV24,TS,docs/requisitos/diseno.md,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV25,VER,evidencias/ejecucion_v0/consolidado.csv,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV26,VER,evidencias/ejecucion_v0/rechazos.csv,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV27,VER,evidencias/ejecucion_v0/resumen.txt,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV28,VER,evidencias/pruebas/pytest_v0.txt,1.0,Gabriela Borda,,2026-11-08
+EV29,VER,docs/gestion/plan_pruebas.md,1.0,Gabriela Borda,,2026-11-08
+EV30,VER,docs/gestion/revision_codigo_B1.md,1.0,Gabriela Borda,,2026-11-08
+EV31,PPQA,evidencias/nc01_analisis.md,1.0,Gabriela Borda,,2026-11-08
+EV32,PPQA,evidencias/pruebas/pytest_v0_venv.txt,1.0,Gabriela Borda,,2026-11-08
+EV33,PPQA,docs/gestion/nc01.md,1.0,Gabriela Borda,,2026-11-08
+EV34,CM,docs/gestion/CR01.md,1.0,Gabriela Borda,,2026-11-08
+EV35,CM,docs/gestion/registro_cambios.csv,1.0,Gabriela Borda,,2026-11-08
 
