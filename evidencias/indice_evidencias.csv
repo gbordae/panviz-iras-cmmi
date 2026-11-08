@@ -43,3 +43,6 @@ EV41,MA,evidencias/medicion/indicadores_corte1.txt,1.0,Gabriela Borda,,2026-11-0
 EV42,MA,docs/gestion/indicadores.csv,1.0,Gabriela Borda,,2026-11-08
 EV43,MA,docs/gestion/indicadores.md,1.0,Gabriela Borda,,2026-11-08
 EV44,PMC,docs/gestion/seguimiento_pmc.md,1.0,Gabriela Borda,,2026-11-08
+EV45,REQM,docs/gestion/hallazgos_revision_requisitos.md,1.0,Gabriela Borda,,2026-11-08
+EV46,REQM,docs/requisitos/requisitos.md,0.2,Gabriela Borda,,2026-11-08
+EV47,CM,docs/gestion/CR01.md,0.2,Gabriela Borda,,2026-11-08
