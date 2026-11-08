@@ -1,1 +1,4 @@
 id,tarea,responsable,estado,fecha_creacion,fecha_cierre,evidencia_cierre
+T01,Estructura y entorno,E5 Ccoscco Alvis Italo,cerrado,2026-11-08,2026-11-08,evidencias/entorno.txt
+T02,Requisitos datos y oraculo,E2 Meza Vizcarra Cielo,en revision,2026-11-08,,
+

@@ -7,3 +7,4 @@
 | E3 | Fernandez Huarca, Rodrigo         | Diseño y desarrollo          |
 | E4 | Suclle Suca, Michael              | Calidad y pruebas            |
 | E5 | Ccoscco Alvis, Italo              | Configuración y medición     |
+

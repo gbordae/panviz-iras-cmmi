@@ -9,3 +9,4 @@
 | 5    | Cambio controlado             | 2026-11-10        | Ccoscco Alvis, Italo (E5)     | Registro de cambios gestionado y versionado                   | pendiente |
 | 6    | Evaluación y ajuste           | 2026-11-10        | Suclle Suca, Michael (E4)     | Informe de evaluación y lista de mejoras                      | pendiente |
 | 7    | Liberación y cierre           | 2026-11-10        | Borda Espinoza, Gabriela (E1) | Repositorio cerrado, línea base B1 establecida                | pendiente |
+

@@ -1,0 +1,36 @@
+﻿=== Verificacion independiente del oraculo — Panviz CMMI DEV v1.3 ===
+Fecha de ejecucion: 2026-11-08 14:06:05
+Script: verificar_oraculo.py (temporal, no en src/)
+Ejecutado por: verificacion manual pre-implementacion
+
+Filas de datos encontradas: 20
+OK: el CSV tiene exactamente 20 filas de datos.
+Filas validas tras aplicar rechazos del oraculo: 15
+OK: exactamente 15 filas validas.
+
+Consolidado calculado (semana_iso, establecimiento, distrito, grupo_etario) => casos:
+  ('2026-W43', 'CS Alameda', 'Cayma', '0-4') => 1
+  ('2026-W43', 'CS Alameda', 'Cayma', '5-14') => 1
+  ('2026-W43', 'CS Mirador', 'Yanahuara', '15-59') => 1
+  ('2026-W43', 'Hospital Base', 'Cercado', '60+') => 2
+  ('2026-W44', 'CS Alameda', 'Cayma', '0-4') => 2
+  ('2026-W44', 'CS Mirador', 'Yanahuara', '15-59') => 2
+  ('2026-W44', 'Hospital Base', 'Cercado', '5-14') => 1
+  ('2026-W44', 'Hospital Base', 'Cercado', '60+') => 1
+  ('2026-W45', 'CS Alameda', 'Cayma', '15-59') => 1
+  ('2026-W45', 'CS Mirador', 'Yanahuara', '0-4') => 1
+  ('2026-W45', 'Hospital Base', 'Cercado', '5-14') => 1
+  ('2026-W45', 'Hospital Base', 'Cercado', '60+') => 1
+
+Total de casos en oraculo_consolidado.csv: 15
+OK: total del oraculo es 15.
+OK: todas las claves del consolidado coinciden con el oraculo.
+
+Totales por distrito (calculado): {'Cayma': 5, 'Yanahuara': 4, 'Cercado': 6}
+OK: Cercado = 6 casos.
+OK: Cayma = 5 casos.
+OK: Yanahuara = 4 casos.
+
+============================================================
+RESULTADO: TODAS LAS VERIFICACIONES PASARON (0 errores).
+============================================================

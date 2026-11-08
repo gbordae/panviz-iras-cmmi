@@ -1,1 +1,11 @@
 id,area_cmmi,ruta,version,autor,revisor,fecha
+EV01,CM,evidencias/entorno.txt,1.0,E5 Ccoscco Alvis Italo,,2026-11-08
+EV02,VER,evidencias/verificacion_oraculo.txt,1.0,E5 Ccoscco Alvis Italo,,2026-11-08
+EV03,REQM,datos/notificaciones_iras_sinteticas.csv,1.0,E2 Meza Vizcarra Cielo,,2026-11-08
+EV04,REQM,datos/oraculo_rechazos.csv,1.0,E2 Meza Vizcarra Cielo,,2026-11-08
+EV05,REQM,datos/oraculo_consolidado.csv,1.0,E2 Meza Vizcarra Cielo,,2026-11-08
+EV06,REQM,datos/oraculo_filtro_distrito.md,1.0,E2 Meza Vizcarra Cielo,,2026-11-08
+EV07,REQM,docs/requisitos/catalogo_datos.md,1.0,E2 Meza Vizcarra Cielo,,2026-11-08
+EV08,REQM,docs/requisitos/requisitos.md,1.0,E2 Meza Vizcarra Cielo,,2026-11-08
+EV09,CM,docs/gestion/trazabilidad.csv,1.0,E5 Ccoscco Alvis Italo,,2026-11-08
+

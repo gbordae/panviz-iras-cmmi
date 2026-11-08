@@ -1,0 +1,21 @@
+id,fecha_notificacion,establecimiento,distrito,grupo_etario,evento
+N001,2026-10-20,CS Alameda,Cayma,0-4,IRAS
+N002,2026-10-21,CS Alameda,Cayma,5-14,IRAS
+N003,2026-10-22,CS Mirador,Yanahuara,15-59,IRAS
+N004,2026-10-23,Hospital Base,Cercado,60+,IRAS
+N005,2026-10-24,Hospital Base,Cercado,60+,IRAS
+N006,2026-10-26,CS Alameda,Cayma,0-4,IRAS
+N007,2026-10-27,CS Alameda,Cayma,0-4,IRAS
+N007,2026-10-28,CS Alameda,Cayma,5-14,IRAS
+N008,2026-10-28,CS Mirador,Yanahuara,15-59,IRAS
+N009,2026-10-29,CS Mirador,Yanahuara,15-59,IRAS
+N017,2026-10-29,,Yanahuara,0-4,IRAS
+N010,2026-10-30,Hospital Base,Cercado,5-14,IRAS
+N011,2026-11-01,Hospital Base,Cercado,60+,IRAS
+N018,2026-02-30,CS Alameda,Cayma,15-59,IRAS
+N012,2026-11-02,CS Alameda,Cayma,15-59,IRAS
+N013,2026-11-03,CS Mirador,Yanahuara,0-4,IRAS
+N019,2026-11-03,Hospital Base,Cercado,5-14,COVID
+N014,2026-11-04,Hospital Base,Cercado,60+,IRAS
+N020,2026-11-04,CS Mirador,Yanahuara,90+,IRAS
+N015,2026-11-05,Hospital Base,Cercado,5-14,IRAS
