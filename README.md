@@ -30,8 +30,8 @@ python -m venv .venv
 # Instalar dependencias
 python -m pip install pytest
 
-# Ejecutar pruebas en modo silencioso
-python -m pytest -q
+# Ejecutar pruebas unitarias y de integración
+python -m pytest -q -v
 ```
 
 ## Uso
@@ -44,5 +44,5 @@ python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evi
 
 ## Estado
 
-**Componente v0 en rama `feature/componente-iras`, pendiente de revisión (E2 y E4)**
+**Verificado por pruebas (PR-01 a PR-06) en rama `feature/componente-iras`, pendiente de revisión de código (B1)**
 

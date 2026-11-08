@@ -26,4 +26,7 @@ EV24,TS,docs/requisitos/diseno.md,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
 EV25,VER,evidencias/ejecucion_v0/consolidado.csv,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
 EV26,VER,evidencias/ejecucion_v0/rechazos.csv,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
 EV27,VER,evidencias/ejecucion_v0/resumen.txt,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV28,VER,evidencias/pruebas/pytest_v0.txt,1.0,Gabriela Borda,,2026-11-08
+EV29,VER,docs/gestion/plan_pruebas.md,1.0,Gabriela Borda,,2026-11-08
+EV30,VER,docs/gestion/revision_codigo_B1.md,1.0,Gabriela Borda,,2026-11-08
 
