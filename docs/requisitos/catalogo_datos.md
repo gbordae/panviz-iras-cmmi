@@ -57,3 +57,4 @@ comenzando en **1** (sin contar la fila de encabezado del CSV).
 | `fecha imposible`                   | La fecha no existe en el calendario gregoriano           |
 | `evento distinto de IRAS`           | El campo `evento` no es `IRAS`                           |
 | `grupo etario fuera de catalogo`    | El campo `grupo_etario` no está en el catálogo           |
+

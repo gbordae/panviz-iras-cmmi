@@ -27,3 +27,4 @@ Dado el conjunto de **15 registros válidos** (tras aplicar las reglas de rechaz
 Este oráculo es un **supuesto de diseño** documentado antes de la implementación.
 No representa aprobación formal ni solicitud de cambio activa.
 CR01 se agregará a `trazabilidad.csv` y `registro_cambios.csv` cuando se tramite formalmente.
+

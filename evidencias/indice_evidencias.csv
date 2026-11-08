@@ -8,4 +8,17 @@ EV06,REQM,datos/oraculo_filtro_distrito.md,1.0,E2 Meza Vizcarra Cielo,,2026-11-0
 EV07,REQM,docs/requisitos/catalogo_datos.md,1.0,E2 Meza Vizcarra Cielo,,2026-11-08
 EV08,REQM,docs/requisitos/requisitos.md,1.0,E2 Meza Vizcarra Cielo,,2026-11-08
 EV09,CM,docs/gestion/trazabilidad.csv,1.0,E5 Ccoscco Alvis Italo,,2026-11-08
+EV10,OPD,docs/proceso/proceso_estandar_v1.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV11,OPD,docs/proceso/regla_adaptacion.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV12,OPD,docs/proceso/plantillas/plantilla_requisito.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV13,OPD,docs/proceso/plantillas/plantilla_revision.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV14,OPD,docs/proceso/plantillas/plantilla_pruebas.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV15,OPD,docs/proceso/plantillas/plantilla_cambio.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV16,OPD,docs/proceso/plantillas/plantilla_acta_validacion.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV17,OPD,docs/proceso/plantillas/plantilla_no_conformidad.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV18,OPD,docs/proceso/plantillas/plantilla_modulo_nuevo.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV19,OT,docs/proceso/formacion/guia_formacion_15min.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV20,OT,docs/proceso/formacion/comprobacion.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV21,OT,docs/proceso/formacion/registro_asistencia.csv,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
+EV22,RSKM,docs/gestion/riesgos.csv,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
 
