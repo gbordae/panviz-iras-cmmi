@@ -1,0 +1,20 @@
+﻿=== Ejecucion de Pruebas Pytest v0 — Panviz IRAS ===
+Fecha de ejecucion: 2026-11-08 14:35:37
+Version: pytest 9.1.1
+
+Salida de pytest:
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\Unsa\CaS\TrabajoParcial8
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.14.2
+collected 12 items
+
+tests\test_consolidacion.py ..                                           [ 16%]
+tests\test_importacion.py ...                                            [ 41%]
+tests\test_reconciliacion_exportacion.py ..                              [ 58%]
+tests\test_validacion.py .....                                           [100%]
+
+============================= 12 passed in 0.32s ==============================
+
