@@ -34,4 +34,12 @@ EV32,PPQA,evidencias/pruebas/pytest_v0_venv.txt,1.0,Gabriela Borda,,2026-11-08
 EV33,PPQA,docs/gestion/nc01.md,1.0,Gabriela Borda,,2026-11-08
 EV34,CM,docs/gestion/CR01.md,1.0,Gabriela Borda,,2026-11-08
 EV35,CM,docs/gestion/registro_cambios.csv,1.0,Gabriela Borda,,2026-11-08
-
+EV36,OPF,docs/gestion/diagnostico_brechas.md,1.0,Gabriela Borda,,2026-11-08
+EV37,OPF,docs/gestion/lecciones_articulo.md,1.0,Gabriela Borda,,2026-11-08
+EV38,OPF,docs/gestion/matriz_brechas_cmmi.csv,1.0,Gabriela Borda,,2026-11-08
+EV39,OPF,docs/gestion/matriz_brechas_cmmi.md,1.0,Gabriela Borda,,2026-11-08
+EV40,MA,evidencias/medicion/calcular_indicadores.py,1.0,Gabriela Borda,,2026-11-08
+EV41,MA,evidencias/medicion/indicadores_corte1.txt,1.0,Gabriela Borda,,2026-11-08
+EV42,MA,docs/gestion/indicadores.csv,1.0,Gabriela Borda,,2026-11-08
+EV43,MA,docs/gestion/indicadores.md,1.0,Gabriela Borda,,2026-11-08
+EV44,PMC,docs/gestion/seguimiento_pmc.md,1.0,Gabriela Borda,,2026-11-08

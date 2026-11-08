@@ -1,0 +1,60 @@
+=== Reporte de Indicadores de Proceso — Corte 1 ===
+Fecha de corte   : 2026-11-08 16:34:32
+Intérprete Python: D:\Unsa\CaS\TrabajoParcial8\.venv\Scripts\python.exe
+
+Indicador   : Trazabilidad de requisitos
+Fórmula     : (requisitos con diseno, codigo y prueba / total requisitos R01-R05 + CR01)
+Numerador   : 4
+Denominador : 6
+Valor       : 66.67%
+Observación : sin linea base (4 de 6 con diseno, codigo y prueba; R05 y CR01 pendientes)
+
+Indicador   : Pruebas satisfactorias
+Fórmula     : (pruebas unitarias aprobadas / pruebas ejecutadas)
+Numerador   : 12
+Denominador : 12
+Valor       : 100.00%
+Observación : sin linea base (12 funciones pytest pasaron; cubre los 6 IDs: PR-01, PR-02, PR-03, PR-04, PR-05, PR-06)
+
+Indicador   : Detección de errores de datos
+Fórmula     : (filas invalidas detectadas segun oraculo / total filas invalidas esperadas 5)
+Numerador   : 5
+Denominador : 5
+Valor       : 100.00%
+Observación : sin linea base (5 de 5 rechazos esperados detectados con motivo exacto)
+
+Indicador   : Reconciliación de casos
+Fórmula     : (suma de casos en consolidado - registros aceptados)
+Numerador   : 15
+Denominador : 15
+Valor       : 0
+Observación : sin linea base (balance exacto: 15 casos consolidados - 15 filas aceptadas = 0)
+
+Indicador   : Eficacia de formación
+Fórmula     : (integrantes con comprobacion de formacion realizada / total 5 integrantes)
+Numerador   : 0
+Denominador : 5
+Valor       : 0.00%
+Observación : sin linea base (sesion no ejecutada aun; casillas pendientes)
+
+Indicador   : Cumplimiento de revisiones por pares
+Fórmula     : (productos con revisor identificado y revision cerrada / productos sometidos a revision)
+Numerador   : 0
+Denominador : 3
+Valor       : 0.00%
+Observación : sin linea base (revisiones preparadas en borrador; revisores aun no ejecutaron firmas)
+
+Detalle de funciones pytest (12):
+  - test_consolidacion_conocida
+  - test_semana_iso_limite_anio
+  - test_importacion_valida
+  - test_importacion_contrato_columnas_invalido
+  - test_importacion_contrato_columnas_faltantes
+  - test_reconciliacion_y_archivos_exportados
+  - test_reconciliacion_descuadre
+  - test_validacion_campo_obligatorio_vacio
+  - test_validacion_evento_distinto_iras
+  - test_validacion_grupo_etario_fuera_catalogo
+  - test_validacion_fecha_imposible
+  - test_validacion_clave_duplicada
+IDs de casos de prueba cubiertos: PR-01, PR-02, PR-03, PR-04, PR-05, PR-06
