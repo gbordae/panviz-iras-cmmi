@@ -1,0 +1,55 @@
+=== Reporte de Indicadores de Proceso — Corte 2 ===
+Fecha de corte   : 2026-11-08 19:22:13
+Intérprete Python: D:\Unsa\CaS\TrabajoParcial8\.venv\Scripts\python.exe
+
+Indicador   : Trazabilidad de requisitos
+Fórmula     : (requisitos con diseno, codigo y prueba / total requisitos R01-R05 + CR01)
+Numerador   : 5
+Denominador : 6
+Valor       : 83.33%
+Observación : sin linea base (5 de 6 trazados con diseno, codigo y prueba; R05 pendiente)
+
+Indicador   : Pruebas satisfactorias
+Fórmula     : (pruebas unitarias aprobadas / pruebas ejecutadas)
+Numerador   : 19
+Denominador : 19
+Valor       : 100.00%
+Observación : sin linea base (100% aprobadas: 19 funciones pytest pasaron, cubriendo los 7 IDs: PR-01, PR-02, PR-03, PR-04, PR-05, PR-06, PR-07)
+
+Indicador   : Detección de errores de datos
+Fórmula     : (filas invalidas detectadas segun oraculo / total filas invalidas esperadas 5)
+Numerador   : 5
+Denominador : 5
+Valor       : 100.00%
+Observación : sin linea base (5 de 5 rechazos esperados detectados con motivo exacto)
+
+Indicador   : Reconciliación de casos
+Fórmula     : (suma de casos en consolidado - registros aceptados / aceptadas del distrito)
+Numerador   : sin=15, cer=6, cay=5, yan=4
+Denominador : sin=15, cer=6, cay=5, yan=4
+Valor       : 0
+Observación : sin linea base (balance exacto: diferencia=0 en sin_filtro y en los 3 distritos: Cercado 0, Cayma 0, Yanahuara 0)
+
+Indicador   : Eficacia de formación
+Fórmula     : (integrantes con comprobacion de formacion realizada / total 5 integrantes)
+Numerador   : 0
+Denominador : 5
+Valor       : 0.00%
+Observación : sin linea base (sesion no ejecutada aun; casillas pendientes)
+
+Indicador   : Cumplimiento de revisiones por pares
+Fórmula     : (productos con revision cerrada / total productos en registro_revisiones.csv)
+Numerador   : 1
+Denominador : 5
+Valor       : 20.00%
+Observación : sin linea base (1 de 5 cerradas: requisitos cerrada; codigo parcial; diseno, pruebas y liberacion pendientes)
+
+Desglose de Pruebas:
+  Total funciones pytest ejecutadas: 19
+  Total casos de prueba cubiertos   : 7 (PR-01, PR-02, PR-03, PR-04, PR-05, PR-06, PR-07)
+
+Desglose de Reconciliación:
+  - sin_filtro: diferencia = 0
+  - Cercado: diferencia = 0
+  - Cayma: diferencia = 0
+  - Yanahuara: diferencia = 0

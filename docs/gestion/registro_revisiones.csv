@@ -1,0 +1,6 @@
+producto,ruta,autor_rol,revisor,evidencia,fecha,cobertura,estado_revision
+requisitos,docs/requisitos/requisitos.md,E2 Requisitos y usuario simulado,E3 Fernandez Huarca Rodrigo,evidencias/revisiones/Evidencia_03.png,2026-11-08 17:47,requisitos R01-R05,cerrada con hallazgos H-01 y H-02 incorporados en requisitos.md v0.2
+diseno,docs/requisitos/diseno.md,E3 Diseno y desarrollo,pendiente,pendiente,pendiente,diseno v0.1 y v0.2,pendiente
+codigo,src/panviz/,E3 Diseno y desarrollo,E4 Suclle Suca Michael,evidencias/revisiones/Evidencia_02.png,2026-11-08 17:22,solo codigo v0 previo a CR01,parcial (cambios de CR01 pendientes de revision)
+pruebas,tests/,E4 Calidad y pruebas,pendiente,pendiente,pendiente,PR-01 a PR-07,pendiente
+liberacion,docs/gestion/,E5 Configuracion y medicion,pendiente,pendiente,pendiente,linea base B1,pendiente
