@@ -7,7 +7,8 @@
 | Repositorio Git  | `https://github.com/gbordae/panviz-iras-cmmi.git`        |
 | Commit validado  | `c7989fb`                                                |
 | Fecha ejecución  | 2026-11-08                                               |
-| Hora ejecución   | 8:40 pm (capturas V-01..V-04) / 8:55 (mensaje de E2)     |
+| Hora capturas    | 20:30-20:32 (segun fecha de los archivos)                |
+| Hora mensaje E2  | 20:55 (Evidencia_08)                                     |
 | Estado           | Confirmacion del acta por E2: pendiente                  |
 
 > **Nota metodológica obligatoria:** *La validación del usuario simulado no equivale a la aprobación de una autoridad sanitaria real ni a un aval clínico-epidemiológico oficial.* Se realiza exclusivamente como práctica de ingeniería de software CMMI DEV v1.3 (área VAL).
@@ -54,4 +55,4 @@
 - **Decisión final:** conforme, segun reporte de E2
 - **Confirmacion del acta por E2: pendiente**
 - **Nota metodológica:** la validacion del usuario simulado no equivale a la aprobacion de una autoridad sanitaria real.
-- **Observaciones:** Resultados informados textualmente por E2 a las 8:55 confirmando commit `c7989fb`. Evidencia del mensaje: mensaje de E2: captura pendiente de archivar (archivo en disco: `evidencias/revisiones/Evidencia_08.png`).
+- **Observaciones:** Resultados informados textualmente por E2 a las 20:55 (Evidencia_08) confirmando commit `c7989fb`. Evidencia del mensaje: `evidencias/revisiones/Evidencia_08.png`.

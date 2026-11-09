@@ -6,7 +6,8 @@
 |---------------------|-------|
 | **Usuario simulado**| E2 Meza Vizcarra, Cielo |
 | **Fecha**           | 2026-11-08 |
-| **Hora**            | 8:40 pm (capturas de validación) / 8:55 (mensaje de E2) |
+| **Hora de capturas**| 20:30-20:32 (segun fecha de los archivos) |
+| **Hora del mensaje de E2** | 20:55 (Evidencia_08) |
 | **Commit validado** | `c7989fb` |
 | **Confirmación del acta por E2** | pendiente |
 
@@ -24,4 +25,4 @@
 | Campo               | Valor |
 |---------------------|-------|
 | **Decisión final**  | conforme, segun reporte de E2 |
-| **Observaciones**   | Confirmacion del acta por E2: pendiente. La validacion del usuario simulado no equivale a la aprobacion de una autoridad sanitaria real. Resultados recibidos por mensaje de E2 a las 8:55 para el commit validado c7989fb. Evidencia del mensaje: mensaje de E2: captura pendiente de archivar (archivo en disco: `evidencias/revisiones/Evidencia_08.png`). |
+| **Observaciones**   | Confirmacion del acta por E2: pendiente. La validacion del usuario simulado no equivale a la aprobacion de una autoridad sanitaria real. Resultados recibidos por mensaje de E2 a las 20:55 (Evidencia_08) para el commit validado c7989fb. Evidencia del mensaje: `evidencias/revisiones/Evidencia_08.png`. |
