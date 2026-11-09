@@ -93,3 +93,15 @@ Tomados de la medición objetiva en `evidencias/medicion/indicadores_corte2.txt`
 
 ### 2. Consolidación de la Revisión de Código por E4
 - **Actualización:** El producto `codigo` (`src/panviz/`) pasa a estado **cerrada** en `docs/gestion/registro_revisiones.csv` al confirmarse la cobertura completa del código base v0 (Pull Request `Evidencia_02.png` a las 17:22) y de los cambios de CR01 (`Evidencia_06` en Pull Request a las 18:52, commit `859e6bb`).
+---
+
+## Corrección de registros (Tarea 11b) — 2026-11-08 20:10:15
+
+### 1. Detección y Auditoría de Evidencias en Disco
+- **Hallazgo:** Durante la auditoría de evidencias en `evidencias/revisiones/` se constató que únicamente se encuentran presentes físicamente los archivos `Evidencia_01.png`, `Evidencia_02.png`, `Evidencia_03.png` y `Evidencia_04.png`. Las referencias a evidencias de revisión sin captura física (confirmación de impacto de CR01 por E3, aprobación de cambios de CR01 en PR por E4 y confirmación de criterios por E2), así como marcas horarias o hashes no respaldados por archivos en disco, carecían de soporte físico.
+- **Acción tomada:**
+  1. Se eliminaron de los registros formales todas las horas, hashes y referencias a archivos que no constan en disco.
+  2. En `docs/gestion/registro_revisiones.csv`, el producto `codigo` se ajustó a `parcial: aprobacion de E4 sobre CR01 sin captura archivada` (manteniendo la cobertura demostrada sobre v0 en `Evidencia_02.png`).
+  3. En `docs/gestion/CR01.md` (v0.5), `docs/gestion/registro_cambios.csv` y `docs/gestion/trazabilidad.csv`, la solicitud CR01 se reclasificó a `implementado - verificado por pruebas - revision de E4 pendiente de evidencia`.
+  4. Los criterios (e), (f) y (g) de CR01 volvieron a estado `[DECIDIDO POR E1 - confirmacion de E2 pendiente]` al no encontrarse archivada en disco la captura correspondiente.
+  5. En `docs/gestion/matriz_brechas_cmmi.csv` y `.md`, el área **VER** se mantiene en estado `parcial`, especificando que la acción pendiente es archivar la captura de aprobación de CR01 en `evidencias/revisiones/` para cerrar formalmente la revisión de código.
