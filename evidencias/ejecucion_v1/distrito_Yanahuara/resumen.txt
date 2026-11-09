@@ -1,0 +1,7 @@
+leidas: 20
+aceptadas: 15
+rechazadas: 5
+distrito_filtrado: Yanahuara
+aceptadas_del_distrito: 4
+suma_consolidado: 4
+diferencia_reconciliacion: 0
