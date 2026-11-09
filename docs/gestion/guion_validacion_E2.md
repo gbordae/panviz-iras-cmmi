@@ -5,8 +5,10 @@
 | Rol validador    | E2 Meza Vizcarra, Cielo (Requisitos y usuario simulado)  |
 | Versión evaluada | Línea base B2 / Componente v1 con CR01                   |
 | Repositorio Git  | `https://github.com/gbordae/panviz-iras-cmmi.git`        |
-| Commit validado  |                                                          |
-| Fecha ejecución  |                                                          |
+| Commit validado  | `c7989fb`                                                |
+| Fecha ejecución  | 2026-11-08                                               |
+| Hora ejecución   | 8:40 pm (capturas V-01..V-04) / 8:55 (mensaje de E2)     |
+| Estado           | Confirmacion del acta por E2: pendiente                  |
 
 > **Nota metodológica obligatoria:** *La validación del usuario simulado no equivale a la aprobación de una autoridad sanitaria real ni a un aval clínico-epidemiológico oficial.* Se realiza exclusivamente como práctica de ingeniería de software CMMI DEV v1.3 (área VAL).
 
@@ -39,16 +41,17 @@
 
 ## 2. Matriz de Escenarios de Validación
 
-| ID | Escenario | Comando a ejecutar | Resultado esperado (Oráculo) | Resultado observado | Decisión |
-|:---:|:---|:---|:---|:---:|:---:|
-| **V-01** | Ejecución estándar sin filtro | `python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida salida_v01` | `leidas: 20`, `aceptadas: 15`, `rechazadas: 5`, `suma_consolidado: 15`, `diferencia_reconciliacion: 0`. Archivo `rechazos.csv` con exactamente 5 filas rechazadas en índices de fila_datos 8, 11, 14, 17 y 19. | | |
-| **V-02** | Filtro específico por distrito Cercado | `python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida salida_v02 --distrito Cercado` | `distrito_filtrado: Cercado`, `aceptadas_del_distrito: 6`, `suma_consolidado: 6`, `diferencia_reconciliacion: 0`. `consolidado.csv` con 6 casos (W43: 60+ [2]; W44: 5-14 [1], 60+ [1]; W45: 60+ [1], 5-14 [1]). Mismos 5 rechazos. | | |
-| **V-03** | Filtro con normalización de espacios y mayúsculas (`" cayma "`) | `python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida salida_v03 --distrito " cayma "` | `distrito_filtrado: cayma`, `aceptadas_del_distrito: 5`, `suma_consolidado: 5`, `diferencia_reconciliacion: 0`. Coincidencia con 5 casos de Cayma del oráculo. Mismos 5 rechazos. | | |
-| **V-04** | Filtro específico por distrito Yanahuara | `python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida salida_v04 --distrito Yanahuara` | `distrito_filtrado: Yanahuara`, `aceptadas_del_distrito: 4`, `suma_consolidado: 4`, `diferencia_reconciliacion: 0`. Coincidencia con 4 casos de Yanahuara del oráculo. Mismos 5 rechazos. | | |
+| ID | Escenario | Comando a ejecutar | Resultado esperado (Oráculo) | Resultado observado | Decisión | Evidencia |
+|:---:|:---|:---|:---|:---|:---:|:---|
+| **V-01** | Ejecución estándar sin filtro | `python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida salida_v01` | `leidas: 20`, `aceptadas: 15`, `rechazadas: 5`, `suma_consolidado: 15`, `diferencia_reconciliacion: 0`. Archivo `rechazos.csv` con exactamente 5 filas rechazadas en índices de fila_datos 8, 11, 14, 17 y 19. | leidas=20, aceptadas=15, rechazadas=5, suma=15, diferencia=0; rechazos en filas 8, 11, 14, 17 y 19. Conforme. | conforme, segun reporte de E2 | `evidencias/validacion/PruebaUsuario_01.png` |
+| **V-02** | Filtro específico por distrito Cercado | `python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida salida_v02 --distrito Cercado` | `distrito_filtrado: Cercado`, `aceptadas_del_distrito: 6`, `suma_consolidado: 6`, `diferencia_reconciliacion: 0`. `consolidado.csv` con 6 casos (W43: 60+ [2]; W44: 5-14 [1], 60+ [1]; W45: 60+ [1], 5-14 [1]). Mismos 5 rechazos. | suma=6, aceptadas_del_distrito=6, mismos 5 rechazos. Conforme. | conforme, segun reporte de E2 | `evidencias/validacion/PruebaUsuario_02.png` |
+| **V-03** | Filtro con normalización de espacios y mayúsculas (`" cayma "`) | `python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida salida_v03 --distrito " cayma "` | `distrito_filtrado: cayma`, `aceptadas_del_distrito: 5`, `suma_consolidado: 5`, `diferencia_reconciliacion: 0`. Coincidencia con 5 casos de Cayma del oráculo. Mismos 5 rechazos. | suma=5. Conforme. | conforme, segun reporte de E2 | `evidencias/validacion/PruebaUsuario_03.png` |
+| **V-04** | Filtro específico por distrito Yanahuara | `python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida salida_v04 --distrito Yanahuara` | `distrito_filtrado: Yanahuara`, `aceptadas_del_distrito: 4`, `suma_consolidado: 4`, `diferencia_reconciliacion: 0`. Coincidencia con 4 casos de Yanahuara del oráculo. Mismos 5 rechazos. | suma=4. Conforme. | conforme, segun reporte de E2 | `evidencias/validacion/PruebaUsuario_04.png` |
 
 ---
 
 ## 3. Conclusión de la Validación
-*(A completar por E2 al finalizar las pruebas)*
-- **Decisión final:** 
-- **Observaciones:** 
+- **Decisión final:** conforme, segun reporte de E2
+- **Confirmacion del acta por E2: pendiente**
+- **Nota metodológica:** la validacion del usuario simulado no equivale a la aprobacion de una autoridad sanitaria real.
+- **Observaciones:** Resultados informados textualmente por E2 a las 8:55 confirmando commit `c7989fb`. Evidencia del mensaje: mensaje de E2: captura pendiente de archivar (archivo en disco: `evidencias/revisiones/Evidencia_08.png`).

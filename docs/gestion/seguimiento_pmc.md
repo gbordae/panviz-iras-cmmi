@@ -105,3 +105,26 @@ Tomados de la medición objetiva en `evidencias/medicion/indicadores_corte2.txt`
   3. En `docs/gestion/CR01.md` (v0.5), `docs/gestion/registro_cambios.csv` y `docs/gestion/trazabilidad.csv`, la solicitud CR01 se reclasificó a `implementado - verificado por pruebas - revision de E4 pendiente de evidencia`.
   4. Los criterios (e), (f) y (g) de CR01 volvieron a estado `[DECIDIDO POR E1 - confirmacion de E2 pendiente]` al no encontrarse archivada en disco la captura correspondiente.
   5. En `docs/gestion/matriz_brechas_cmmi.csv` y `.md`, el área **VER** se mantiene en estado `parcial`, especificando que la acción pendiente es archivar la captura de aprobación de CR01 en `evidencias/revisiones/` para cerrar formalmente la revisión de código.
+
+---
+
+## Validación de usuario simulado (Tarea 12a) — 2026-11-08 21:20:17
+
+### 1. Ejecución de Escenarios por Usuario Simulado (E2)
+- **Usuario simulado:** E2 Meza Vizcarra, Cielo (Requisitos y usuario simulado).
+- **Commit validado:** `c7989fb` (verificado con `git diff --stat c7989fb HEAD -- src tests` sin diferencias en código ni pruebas).
+- **Hora de ejecución:** 8:40 pm (capturas `evidencias/validacion/PruebaUsuario_01.png` a `PruebaUsuario_04.png`).
+- **Hora de reporte de mensaje:** 8:55.
+- **Resultados reportados por E2:**
+  - V-01 sin filtro: leidas=20, aceptadas=15, rechazadas=5, suma=15, diferencia=0; rechazos en filas 8, 11, 14, 17 y 19. Conforme.
+  - V-02 Cercado: suma=6, aceptadas_del_distrito=6, mismos 5 rechazos. Conforme.
+  - V-03 " cayma ": suma=5. Conforme.
+  - V-04 Yanahuara: suma=4. Conforme.
+- **Evidencia del mensaje:** mensaje de E2: captura pendiente de archivar (archivo en disco: `evidencias/revisiones/Evidencia_08.png`).
+
+### 2. Estado de Validación y Matriz de Brechas
+- **Decisión del acta:** Conforme, según reporte de E2.
+- **Confirmación del acta por E2:** Pendiente.
+- **Área VAL en CMMI:** Pasa de *no evidenciada* a **parcial** en `docs/gestion/matriz_brechas_cmmi.csv` y `.md`.
+- **Acción pendiente:** E2 confirma el acta; E1 aprueba B2 tras la copia limpia de E5; revalidar si cambia `src/`.
+- **Nota metodológica:** La validación del usuario simulado no equivale a la aprobación de una autoridad sanitaria real ni a un aval clínico.

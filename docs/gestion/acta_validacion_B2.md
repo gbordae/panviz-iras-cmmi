@@ -5,21 +5,23 @@
 | Campo               | Valor |
 |---------------------|-------|
 | **Usuario simulado**| E2 Meza Vizcarra, Cielo |
-| **Fecha**           |       |
-| **Commit validado** |       |
+| **Fecha**           | 2026-11-08 |
+| **Hora**            | 8:40 pm (capturas de validación) / 8:55 (mensaje de E2) |
+| **Commit validado** | `c7989fb` |
+| **Confirmación del acta por E2** | pendiente |
 
 ## Escenarios de validación
 
-| Escenario | Entrada / condición | Resultado esperado | Resultado observado | Decisión |
-|-----------|--------------------|--------------------|---------------------|----------|
-| **V-01**  | Sin filtro (`--entrada datos/notificaciones_iras_sinteticas.csv`) | 20 leídas, 15 aceptadas, 5 rechazadas (filas 8, 11, 14, 17, 19), suma 15, diferencia 0 | | |
-| **V-02**  | `--distrito Cercado` | `distrito_filtrado: Cercado`, `aceptadas_del_distrito: 6`, `suma_consolidado: 6`, `diferencia_reconciliacion: 0`, 5 rechazos base | | |
-| **V-03**  | `--distrito " cayma "` | `distrito_filtrado: cayma`, `aceptadas_del_distrito: 5`, `suma_consolidado: 5`, `diferencia_reconciliacion: 0`, 5 rechazos base | | |
-| **V-04**  | `--distrito Yanahuara` | `distrito_filtrado: Yanahuara`, `aceptadas_del_distrito: 4`, `suma_consolidado: 4`, `diferencia_reconciliacion: 0`, 5 rechazos base | | |
+| Escenario | Entrada / condición | Resultado esperado | Resultado observado | Decisión | Evidencia |
+|:---:|---|---|---|:---:|---|
+| **V-01**  | Sin filtro (`--entrada datos/notificaciones_iras_sinteticas.csv`) | 20 leídas, 15 aceptadas, 5 rechazadas (filas 8, 11, 14, 17, 19), suma 15, diferencia 0 | leidas=20, aceptadas=15, rechazadas=5, suma=15, diferencia=0; rechazos en filas 8, 11, 14, 17 y 19. Conforme. | conforme, segun reporte de E2 | `evidencias/validacion/PruebaUsuario_01.png` |
+| **V-02**  | `--distrito Cercado` | `distrito_filtrado: Cercado`, `aceptadas_del_distrito: 6`, `suma_consolidado: 6`, `diferencia_reconciliacion: 0`, 5 rechazos base | suma=6, aceptadas_del_distrito=6, mismos 5 rechazos. Conforme. | conforme, segun reporte de E2 | `evidencias/validacion/PruebaUsuario_02.png` |
+| **V-03**  | `--distrito " cayma "` | `distrito_filtrado: cayma`, `aceptadas_del_distrito: 5`, `suma_consolidado: 5`, `diferencia_reconciliacion: 0`, 5 rechazos base | suma=5. Conforme. | conforme, segun reporte de E2 | `evidencias/validacion/PruebaUsuario_03.png` |
+| **V-04**  | `--distrito Yanahuara` | `distrito_filtrado: Yanahuara`, `aceptadas_del_distrito: 4`, `suma_consolidado: 4`, `diferencia_reconciliacion: 0`, 5 rechazos base | suma=4. Conforme. | conforme, segun reporte de E2 | `evidencias/validacion/PruebaUsuario_04.png` |
 
 ## Decisión global
 
 | Campo               | Valor |
 |---------------------|-------|
-| **Decisión final**  |       |
-| **Observaciones**   |       |
+| **Decisión final**  | conforme, segun reporte de E2 |
+| **Observaciones**   | Confirmacion del acta por E2: pendiente. La validacion del usuario simulado no equivale a la aprobacion de una autoridad sanitaria real. Resultados recibidos por mensaje de E2 a las 8:55 para el commit validado c7989fb. Evidencia del mensaje: mensaje de E2: captura pendiente de archivar (archivo en disco: `evidencias/revisiones/Evidencia_08.png`). |
