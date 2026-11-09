@@ -2,10 +2,10 @@
 
 | Metadato  | Valor                                                                 |
 |-----------|-----------------------------------------------------------------------|
-| Versión   | 0.1                                                                   |
+| Versión   | 0.2                                                                   |
 | Fecha     | 2026-11-08                                                            |
 | Autor     | E3 Fernandez Huarca, Rodrigo                                          |
-| Estado    | borrador — pendiente de revisión por E2 (requisitos) y E4 (calidad)  |
+| Estado    | diseño actualizado con CR01 aprobado                                  |
 
 ---
 
@@ -15,19 +15,22 @@
 CSV entrada
     │
     ▼
-importar()   ← verifica contrato de encabezado (SystemExit 2 si falla)
+importar()               ← verifica contrato de encabezado (SystemExit 2 si falla)
     │  lista[dict bruto]
     ▼
-validar()    ← aplica reglas fila a fila en orden definido
+validar()                ← aplica reglas fila a fila en orden definido
     │  (registros_validos, rechazos)
     ▼
-consolidar() ← agrupa por semana ISO, establecimiento, distrito, grupo etario
+[filtrar_por_distrito()] ← etapa opcional CR01 si se indica --distrito
+    │  registros_a_consolidar
+    ▼
+consolidar()             ← función pura: agrupa por semana ISO, establecimiento, distrito, grupo etario
     │  tabla_consolidado
     ▼
-exportar()   ← escribe consolidado.csv, rechazos.csv, resumen.txt
+exportar()               ← escribe consolidado.csv, rechazos.csv, resumen.txt
     │  código de salida (0 ó 3)
     ▼
-reconciliar  ← verificado dentro de exportar(); SystemExit 3 si diferencia ≠ 0
+reconciliar              ← verificado dentro de exportar(); SystemExit 3 si diferencia ≠ 0
 ```
 
 ---
@@ -38,9 +41,10 @@ reconciliar  ← verificado dentro de exportar(); SystemExit 3 si diferencia ≠
 |------------------|----------------------------------------------------------------------|
 | `__init__.py`    | Declara el paquete; expone `__version__`                            |
 | `__main__.py`    | Punto de entrada para `python -m panviz`; llama a `cli.main()`     |
-| `cli.py`         | Parseo de argumentos con `argparse`; orquesta el pipeline completo  |
+| `cli.py`         | Parseo de argumentos con `argparse` (incluye `--distrito`); orquesta el pipeline completo |
 | `importador.py`  | Lee el CSV y verifica el contrato de encabezado                     |
 | `validador.py`   | Valida cada fila según las reglas del catálogo; separa válidas/rechazadas |
+| `filtro.py`      | Nueva función de filtrado por distrito previa al consolidador (CR01)|
 | `consolidador.py`| Agrupa registros válidos por semana ISO y atributos; cuenta casos   |
 | `exportador.py`  | Escribe los tres archivos de salida y ejecuta la reconciliación     |
 
@@ -53,19 +57,22 @@ def importar(ruta: Path) -> list[dict[str, str]]:
 
 # validador.py
 def validar(filas: list[dict[str, str]]) -> tuple[list[dict], list[dict]]:
+    """Retorna (registros_validos, rechazos)."""
+
+# filtro.py (CR01)
+def filtrar_por_distrito(
+    validas: list[dict],
+    distrito: str | None
+) -> tuple[list[dict], int]:
     """
-    Retorna (registros_validos, rechazos).
-    registros_validos: dicts con campos parseados; fecha como datetime.date.
-    rechazos: dicts con fila_datos (int), id (str), motivo (str).
+    Filtra registros válidos por nombre de distrito.
+    Normalización: strip() y casefold(). No modifica datos originales.
+    Retorna (registros_filtrados, total_aceptadas_distrito).
     """
 
-# consolidador.py
+# consolidador.py (función pura)
 def consolidar(validas: list[dict]) -> list[dict]:
-    """
-    Agrupa por (semana_iso, establecimiento, distrito, grupo_etario).
-    Retorna lista de dicts con semana_iso, establecimiento, distrito,
-    grupo_etario, casos (int).
-    """
+    """Agrupa por (semana_iso, establecimiento, distrito, grupo_etario)."""
 
 # exportador.py
 def exportar(
@@ -73,133 +80,56 @@ def exportar(
     rechazos: list[dict],
     ruta_salida: Path,
     total_leidas: int,
+    distrito_filtrado: str | None = None,
+    aceptadas_del_distrito: int | None = None,
 ) -> int:
-    """
-    Escribe consolidado.csv, rechazos.csv, resumen.txt.
-    Retorna 0 si reconciliación OK, 3 si diferencia ≠ 0.
-    """
-
-# cli.py
-def main() -> None:
-    """Punto de entrada CLI. Orquesta el pipeline completo."""
+    """Escribe salidas y reconcilia. Retorna 0 si OK, 3 si descuadre."""
 ```
 
 ---
 
 ## Contrato de entrada (encabezado CSV)
 
-El encabezado debe ser **exactamente** (mismo orden, mismo texto, sin espacios extra):
-
+El encabezado debe ser **exactamente** en este orden:
 ```
 id,fecha_notificacion,establecimiento,distrito,grupo_etario,evento
 ```
-
-Si el encabezado del CSV no coincide con este contrato, el programa termina
-con **código de salida 2** y un mensaje de error en stdout, sin procesar ninguna fila.
+Si el contrato falla, termina con **código de salida 2** sin procesar filas.
 
 ---
 
 ## Reglas de validación — orden de evaluación por fila
 
-Las reglas se evalúan en este orden. Al detectar la primera infracción, la fila
-es rechazada con el motivo correspondiente y no se evalúan las reglas siguientes.
-
-| Orden | Regla | Motivo exacto en rechazos.csv |
-|-------|-------|-------------------------------|
-| 1 | Algún campo obligatorio está vacío o ausente | `campo obligatorio vacio (<campo>)` |
-| 2 | La fecha no existe en el calendario gregoriano o no tiene formato YYYY-MM-DD | `fecha imposible` |
-| 3 | El evento no es exactamente `IRAS` | `evento distinto de IRAS` |
-| 4 | El grupo etario no está en `{0-4, 5-14, 15-59, 60+}` | `grupo etario fuera de catalogo` |
-| 5 | El `id` ya apareció en una fila anterior de la misma carga | `clave duplicada` |
-
-**Política de duplicados:** se acepta la **primera** aparición del `id`; todas las
-siguientes son rechazadas con motivo `clave duplicada`.
-
-> Los campos obligatorios son todos: `id`, `fecha_notificacion`, `establecimiento`,
-> `distrito`, `grupo_etario`, `evento`. La evaluación de vacío se hace antes de parsear.
+1. Campo obligatorio vacío (`"campo obligatorio vacio (<campo>)"`)
+2. Fecha imposible o formato no YYYY-MM-DD (`"fecha imposible"`)
+3. Evento distinto de IRAS (`"evento distinto de IRAS"`)
+4. Grupo etario fuera del catálogo (`"grupo etario fuera de catalogo"`)
+5. Clave duplicada (`"clave duplicada"`, política: acepta primera aparición, rechaza posteriores)
 
 ---
 
-## Semana ISO
+## Especificación técnica de CR01 (Filtro por distrito)
 
-```python
-import datetime
-iso = fecha.isocalendar()   # (año_iso, semana, dia_semana)
-semana_iso = f"{iso[0]}-W{iso[1]:02d}"   # ejemplo: "2026-W43"
-```
-
-- Se usa el **año ISO** (`iso[0]`), no el año calendario, para evitar errores en semanas de fin/inicio de año.
-- Formato: `AAAA-Wss` con dos dígitos para la semana (p. ej. `W03`, `W43`).
-
----
-
-## Orden del consolidado
-
-1. **Primero:** por `semana_iso` (orden lexicográfico ascendente; funciona porque el formato es sorteable).
-2. **Dentro de cada semana:** por orden de **primera aparición** del grupo en el archivo de entrada.
-
----
-
-## Archivos de salida
-
-### `consolidado.csv`
-```
-semana_iso,establecimiento,distrito,grupo_etario,casos
-```
-
-### `rechazos.csv`
-```
-fila_datos,id,motivo
-```
-- `fila_datos`: número de fila de datos (1-based, **sin contar el encabezado**).
-
-### `resumen.txt`
-```
-leidas: <n>
-aceptadas: <n>
-rechazadas: <n>
-suma_consolidado: <n>
-diferencia_reconciliacion: <n>
-```
+- **Parámetro CLI:** `--distrito <nombre>` (opcional).
+- **Función de filtro:** Se aplica exclusivamente sobre la lista de registros aceptados provenientes de `validar()`. La función `consolidar()` se preserva intacta como función pura.
+- **Normalización de texto:** Se comparan los nombres aplicando `strip().casefold()`, asegurando que entradas como `"cayma"`, `"Cayma"`, `" CAYMA "` coincidan sin alterar los datos textuales originales del archivo.
+- **Invariabilidad de rechazos:** `rechazos.csv` es completamente independiente del filtro (mantiene las 5 filas rechazadas en la carga).
+- **Ajuste en `resumen.txt`:**
+  - Sin filtro: líneas tradicionales (`leidas: 20`, `aceptadas: 15`, `rechazadas: 5`, `suma_consolidado: 15`, `diferencia_reconciliacion: 0`).
+  - Con filtro: añade `distrito_filtrado: <nombre>` y `aceptadas_del_distrito: <n>`.
+- **Reconciliación contextual:**
+  - Con filtro: `diferencia = suma_consolidado - aceptadas_del_distrito`. Si es distinta de 0, código de salida 3.
+  - Sin filtro: `diferencia = suma_consolidado - total_aceptadas`.
+- **Distrito sin registros aceptados:**
+  - Produce un archivo `consolidado.csv` con encabezado exacto y 0 filas de datos.
+  - `suma_consolidado: 0`, `aceptadas_del_distrito: 0`, `diferencia_reconciliacion: 0`.
+  - Agrega línea de advertencia informativa en `resumen.txt`: `AVISO: el distrito '<nombre>' no presenta registros aceptados.`
 
 ---
 
-## Reconciliación
+## Historial de cambios
 
-```
-diferencia = suma(casos en consolidado) - filas_aceptadas
-```
-
-- Si `diferencia == 0`: salida normal (código 0).
-- Si `diferencia ≠ 0`: mensaje de error en stderr y **código de salida 3**.
-
-La reconciliación garantiza que no se pierden ni duplican registros en el pipeline.
-
----
-
-## Uso
-
-```powershell
-# PowerShell — desde la raíz del proyecto
-$env:PYTHONPATH = "src"
-python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evidencias\ejecucion_v0
-```
-
-```bash
-# bash/sh equivalente
-PYTHONPATH=src python -m panviz --entrada datos/notificaciones_iras_sinteticas.csv --salida evidencias/ejecucion_v0
-```
-
----
-
-## Extensibilidad prevista
-
-El consolidador (`consolidar()`) está diseñado como **función pura** que recibe
-únicamente la lista de registros válidos y retorna la tabla consolidada sin efectos
-secundarios. Esto facilita la adición de un futuro filtro (p. ej. por distrito)
-sin modificar el pipeline de validación ni el exportador.
-
-> **CR01 no está tramitado.** No se implementa ningún filtro por distrito en esta versión.
-> Cuando se tramite, se agregará como parámetro opcional o como etapa intermedia
-> entre `consolidar()` y `exportar()`, sin romper la interfaz existente.
-
+| Versión | Fecha | Descripción del cambio | Origen |
+|:---:|:---:|:---|:---:|
+| 0.1 | 2026-11-08 | Diseño inicial del componente Panviz IRAS | E3 Fernandez Huarca, Rodrigo |
+| 0.2 | 2026-11-08 | Incorporación del filtro opcional por distrito (CR01 aprobado), normalización y resumen contextual | CR01 v0.3 / E1 |

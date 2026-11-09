@@ -1,0 +1,7 @@
+leidas: 20
+aceptadas: 15
+rechazadas: 5
+distrito_filtrado: Cayma
+aceptadas_del_distrito: 5
+suma_consolidado: 5
+diferencia_reconciliacion: 0

@@ -99,9 +99,34 @@
 
 ---
 
+
+---
+
+### PR-07 — Filtro por distrito en consolidado (CR01) y paridad sin filtro
+
+| Campo                   | Valor |
+|-------------------------|-------|
+| **ID prueba**           | PR-07 |
+| **Requisito asociado**  | CR01 |
+| **Entrada**             | Notificaciones sintéticas procesadas con `--distrito Cercado`, `--distrito Cayma`, `--distrito Yanahuara`, normalización con espacios/mayúsculas, distrito inexistente, y ejecución sin filtro |
+| **Resultado esperado**  | (1) Consolidado por distrito coincide fila a fila con `oraculo_consolidado.csv` (Cercado=6, Cayma=5, Yanahuara=4); (2) Suma de los 3 distritos = 15; (3) Insensible a mayúsculas/espacios; (4) `rechazos.csv` invariable; (5) `resumen.txt` con `distrito_filtrado` y `aceptadas_del_distrito`; (6) Distrito sin registros emite encabezado, suma 0 y aviso; (7) Sin filtro idéntico byte a byte a `evidencias/ejecucion_v0/` |
+| **Resultado observado** | Las 7 funciones de prueba de `tests/test_cr01_filtro_distrito.py` pasaron satisfactoriamente (7/7 passed); paridad byte a byte confirmada en `sin_filtro/` |
+| **Estado**              | Aprobado |
+| **Fecha ejecución**     | 2026-11-08 |
+
+---
+
+## Resultados de Regresión tras CR01
+
+- **Suite de Regresión (PR-01 a PR-06):** 12 tests pasaron sin fallos (100% de regresión exitosa).
+- **Nuevas Pruebas (PR-07 / CR01):** 7 tests pasaron sin fallos (100% exitosas).
+- **Total de pruebas activas:** 19 tests ejecutados y aprobados.
+- **Evidencias asociadas:** `evidencias/pruebas/pytest_v1_cr01.txt` y carpetas en `evidencias/ejecucion_v1/`.
+
 ## Resumen de Ejecución
 
-- **Total de pruebas ejecutadas:** 12 tests en 4 archivos.
-- **Pruebas aprobadas:** 12
+- **Total de pruebas ejecutadas:** 19 tests en 5 archivos.
+- **Pruebas aprobadas:** 19 (12 regresión + 7 nuevas PR-07)
 - **Pruebas fallidas:** 0
 - **Evidencia asociada:** `evidencias/pruebas/pytest_v0.txt`
+

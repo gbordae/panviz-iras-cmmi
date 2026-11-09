@@ -39,10 +39,15 @@ python -m pytest -q -v
 ```powershell
 # PowerShell — desde la raíz del proyecto
 $env:PYTHONPATH = "src"
-python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evidencias\ejecucion_v0
+
+# Ejecución estándar sin filtro
+python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evidencias\ejecucion_v1\sin_filtro
+
+# Ejecución con filtro por distrito (CR01)
+python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evidencias\ejecucion_v1\distrito_Cercado --distrito Cercado
 ```
 
 ## Estado
 
-**Verificado por pruebas (PR-01 a PR-06) en rama `feature/componente-iras`, pendiente de revisión de código (B1)**
+**Componente v1 con CR01 implementado y verificado por pruebas (PR-01 a PR-07 con regresión completa), pendiente de revisión técnica por E4**
 

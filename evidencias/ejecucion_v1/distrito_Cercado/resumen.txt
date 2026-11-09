@@ -1,0 +1,7 @@
+leidas: 20
+aceptadas: 15
+rechazadas: 5
+distrito_filtrado: Cercado
+aceptadas_del_distrito: 6
+suma_consolidado: 6
+diferencia_reconciliacion: 0

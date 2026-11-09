@@ -1,0 +1,7 @@
+indicador,formula,numerador,denominador,valor,fecha_corte,observacion
+Trazabilidad de requisitos,"(requisitos con diseno, codigo y prueba / total requisitos R01-R05 + CR01)",4,6,66.67%,2026-11-08,"sin linea base (4 de 6 con diseno, codigo y prueba; R05 y CR01 pendientes)"
+Pruebas satisfactorias,(pruebas unitarias aprobadas / pruebas ejecutadas),12,12,100.00%,2026-11-08,"sin linea base (12 funciones pytest pasaron; cubre los 6 IDs: PR-01, PR-02, PR-03, PR-04, PR-05, PR-06)"
+Detección de errores de datos,(filas invalidas detectadas segun oraculo / total filas invalidas esperadas 5),5,5,100.00%,2026-11-08,sin linea base (5 de 5 rechazos esperados detectados con motivo exacto)
+Reconciliación de casos,(suma de casos en consolidado - registros aceptados),15,15,0,2026-11-08,sin linea base (balance exacto: 15 casos consolidados - 15 filas aceptadas = 0)
+Eficacia de formación,(integrantes con comprobacion de formacion realizada / total 5 integrantes),0,5,0.00%,2026-11-08,sin linea base (sesion no ejecutada aun; casillas pendientes)
+Cumplimiento de revisiones por pares,(productos con revisor identificado y revision cerrada / productos sometidos a revision),0,3,0.00%,2026-11-08,sin linea base (revisiones preparadas en borrador; revisores aun no ejecutaron firmas)

@@ -2,12 +2,12 @@
 
 | Campo                 | Valor                                         |
 |-----------------------|-----------------------------------------------|
-| **Producto revisado** | `src/panviz/` (commit a090c29)                |
+| **Producto revisado** | `src/panviz/` (commit revisado: "[completar segun el PR]") |
 | **Autor (rol)**       | E3 Fernandez Huarca, Rodrigo (Diseño y desarrollo) |
-| **Revisor**           |                                               |
-| **Fecha**             |                                               |
-| **Decisión**          |                                               |
-| **Cierre**            |                                               |
+| **Revisor**           | E4 Suclle Suca, Michael (Calidad y pruebas)   |
+| **Fecha**             | 2026-11-08 (hora segun la captura: "[completar]") |
+| **Decisión**          | aprobado en Pull Request (ver Evidencia_02)   |
+| **Cierre**            | Evidencia_02 (Pull Request aprobado en GitHub)|
 
 ---
 
@@ -42,8 +42,9 @@
 
 ## Hallazgos y acciones
 
-_(Se completará por el revisor E4 durante la sesión de revisión)_
+ver comentarios del Pull Request
 
 | ID | Archivo / Línea | Descripción del hallazgo | Acción requerida | Responsable | Estado |
 |----|-----------------|--------------------------|------------------|-------------|--------|
 |    |                 |                          |                  |             |        |
+
