@@ -3,7 +3,7 @@
 | Metadato         | Valor                                                    |
 |------------------|----------------------------------------------------------|
 | Fecha de reporte | 2026-11-08                                               |
-| Hora de reporte  | [completar con la hora de la captura]                    |
+| Hora de reporte  | 17:47                    |
 | Reportado por    | E3 Fernandez Huarca, Rodrigo (Diseño y desarrollo)       |
 | Medio de reporte | Chat grupal del equipo                                   |
 | Revisor          |                                                          |
@@ -19,7 +19,7 @@
 - **Impacto:** Ambigüedad en el criterio de aceptación de R04 que genera una discrepancia documental entre los requisitos y el diseño técnico.
 - **Estado:** aceptado - accion en curso
 - **Acción acordada:** Actualizar docs/requisitos/requisitos.md elevando la versión a 0.2 para incluir explícitamente en el criterio de aceptación de R04 que, ante fallo de reconciliación, el programa termina con código de salida 3 y mensaje de error en stderr.
-- **Evidencia:** captura pendiente de archivar en evidencias/revisiones/
+- **Evidencia:** evidencias/revisiones/Evidencia_03.png
 
 ---
 
@@ -29,7 +29,7 @@
 - **Impacto:** Riesgo de inconsistencias en la experiencia de uso del CLI y de rechazos o filtros vacíos indeseados por diferencias de formato tipográfico.
 - **Estado:** aceptado - accion en curso
 - **Acción acordada:** Incorporar en la versión 0.2 de docs/gestion/CR01.md una regla de normalización (ignorar mayúsculas/minúsculas y recortar espacios en los extremos al evaluar el parámetro --distrito, manteniendo intactos los datos originales del archivo).
-- **Evidencia:** captura pendiente de archivar en evidencias/revisiones/
+- **Evidencia:** evidencias/revisiones/Evidencia_03.png
 
 ---
 
