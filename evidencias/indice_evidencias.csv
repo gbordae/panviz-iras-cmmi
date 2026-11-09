@@ -55,3 +55,10 @@ EV53,VER,evidencias/ejecucion_v1/sin_filtro/consolidado.csv,1.0,Gabriela Borda,,
 EV54,VER,evidencias/ejecucion_v1/distrito_Cercado/consolidado.csv,1.0,Gabriela Borda,,2026-11-08
 EV55,VER,evidencias/ejecucion_v1/distrito_Cayma/consolidado.csv,1.0,Gabriela Borda,,2026-11-08
 EV56,VER,evidencias/ejecucion_v1/distrito_Yanahuara/consolidado.csv,1.0,Gabriela Borda,,2026-11-08
+EV57,OPD,docs/proceso/proceso_estandar_v2.md,2.0,Gabriela Borda,,2026-11-08
+EV58,OPD,docs/proceso/plantillas/plantilla_requisito_v2.md,2.0,Gabriela Borda,,2026-11-08
+EV59,OPD,docs/proceso/plantillas/plantilla_cambio_v2.md,2.0,Gabriela Borda,,2026-11-08
+EV60,OPD,docs/proceso/plantillas/plantilla_pruebas_v2.md,2.0,Gabriela Borda,,2026-11-08
+EV61,OPF,docs/proceso/cambios_v1_a_v2.md,1.0,Gabriela Borda,,2026-11-08
+EV62,VER,docs/gestion/registro_revisiones.csv,1.0,Gabriela Borda,,2026-11-08
+EV63,MA,evidencias/medicion/indicadores_corte2.txt,1.0,Gabriela Borda,,2026-11-08

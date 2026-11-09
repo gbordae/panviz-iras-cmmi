@@ -20,35 +20,64 @@
 | T05 | Pruebas y preparacion de revision | E4 Suclle Suca Michael | **en revision** | 2026-11-08 | | |
 | T06 | NC-01 y registro de CR01 | E1 Borda Espinoza Gabriela | **en revision** | 2026-11-08 | | |
 
----
-
 ### 2. Indicadores del Proyecto en el Corte 1
+1. **Trazabilidad de requisitos:** 4/6 (66.67%)
+2. **Pruebas satisfactorias:** 12/12 (100.00%)
+3. **Detección de errores de datos:** 5/5 (100.00%)
+4. **Reconciliación de casos:** 0 de discrepancia
+5. **Eficacia de formación:** 0/5 (0.00%)
+6. **Cumplimiento de revisiones por pares:** 0/3 (0.00%)
 
-Tomados de la medición objetiva en `evidencias/medicion/indicadores_corte1.txt`:
-
-1. **Trazabilidad de requisitos:** 4/6 (66.67%) — R01 a R04 con diseño, código y pruebas; R05 y CR01 pendientes.
-2. **Pruebas satisfactorias:** 12/12 (100.00%) — 12 funciones pytest pasadas en entorno virtual, cubriendo PR-01 a PR-06.
-3. **Detección de errores de datos:** 5/5 (100.00%) — 5 filas rechazadas con motivos exactos según el oráculo predefinido.
-4. **Reconciliación de casos:** 15 − 15 = 0 casos de discrepancia (cuadre matemático exacto).
-5. **Eficacia de formación:** 0/5 (0.00%) — Sesión y comprobaciones documentadas pero aún no ejecutadas por el equipo.
-6. **Cumplimiento de revisiones por pares:** 0/3 (0.00%) — Checklists estructurados pero firmas/revisiones pendientes de ejecución.
-
----
-
-### 3. Desviaciones Detectadas y Acciones Correctivas
-
-#### Desviación NC-01: Desfase de entorno entre evidencia de pruebas y requirements.txt
-- **Descripción:** La evidencia preliminar `pytest_v0.txt` reportó `pytest 9.1.1` (ejecutado con Python global) mientras que `.venv` contenía `pytest 9.2.0`; además `requirements.txt` poseía codificación UTF-16 LE con BOM generada por redirección PowerShell.
-- **Acción tomada:**
-  1. Diagnóstico causal documentado en `evidencias/nc01_analisis.md`.
-  2. Regeneración de `requirements.txt` en UTF-8 sin BOM con fin de línea LF.
-  3. Verificación preliminar en entorno limpio temporal `$env:TEMP` ejecutando `pytest -q` con registro explícito de `sys.prefix` en `evidencias/pruebas/pytest_v0_venv.txt` (12 tests passed).
-  4. Registro formal de no conformidad en `docs/gestion/nc01.md`.
-- **Responsable:** E1 Borda Espinoza, Gabriela.
-- **Estado:** Abierta (acciones correctivas ejecutadas; pendiente de verificación formal de cierre por E4).
+### 3. Desviaciones Detectadas y Acciones Correctivas en Corte 1
+- **NC-01 (Desfase de entorno y codificación UTF-16 con BOM en requirements.txt):** Acciones correctivas ejecutadas (UTF-8 sin BOM, prueba preliminar en venv limpio).
 
 ---
 
-## Corte 2
+## Corte 2 — 2026-11-08 19:22:13
 
-*pendiente: se registrara tras CR01 y revisiones*
+### 1. Estado de Tareas del Tablero (`docs/gestion/tablero_tareas.csv`)
+
+| ID  | Tarea | Responsable | Estado | Fecha creación | Fecha cierre | Evidencia |
+|:---:|:------|:------------|:------:|:--------------:|:------------:|:----------|
+| T01 | Estructura y entorno | E5 Ccoscco Alvis Italo | **cerrado** | 2026-11-08 | 2026-11-08 | `evidencias/entorno.txt` |
+| T02 | Requisitos datos y oraculo | E2 Meza Vizcarra Cielo | **en revision** | 2026-11-08 | | |
+| T03 | Proceso estandar v1 plantillas formacion y riesgos | E1 Borda Espinoza Gabriela | **en revision** | 2026-11-08 | | |
+| T04 | Diseno DAR y componente | E3 Fernandez Huarca Rodrigo | **en revision** | 2026-11-08 | | |
+| T05 | Pruebas y preparacion de revision | E4 Suclle Suca Michael | **en revision** | 2026-11-08 | | |
+| T06 | NC-01 y registro de CR01 | E1 Borda Espinoza Gabriela | **en revision** | 2026-11-08 | | |
+| T07 | Diagnostico matriz de brechas indicadores y seguimiento | E1 Borda Espinoza Gabriela | **en revision** | 2026-11-08 | | |
+| T08 | Hallazgos de revision y CR01 v0.2 | E3 Fernandez Huarca Rodrigo | **en revision** | 2026-11-08 | | |
+| T09 | Aprobacion e implementacion de CR01 | E3 Fernandez Huarca Rodrigo | **en revision** | 2026-11-08 | | |
+
+---
+
+### 2. Indicadores del Proyecto en el Corte 2
+
+Tomados de la medición objetiva en `evidencias/medicion/indicadores_corte2.txt`:
+
+1. **Trazabilidad de requisitos:** 5/6 (83.33%) — R01 a R04 y CR01 completamente trazados con diseño, código y pruebas; R05 transversal pendiente.
+2. **Pruebas satisfactorias:** 19/19 (100.00%) — 19 funciones pytest aprobadas (12 de regresión PR-01..PR-06 + 7 nuevas PR-07 / CR01).
+3. **Detección de errores de datos:** 5/5 (100.00%) — 5 filas rechazadas con motivos exactos según el oráculo congelado.
+4. **Reconciliación de casos:** Diferencia = 0 en sin_filtro y en los 3 distritos (Cercado: 6−6=0; Cayma: 5−5=0; Yanahuara: 4−4=0; sin_filtro: 15−15=0).
+5. **Eficacia de formación:** 0/5 (0.00%) — Guía de 15 minutos documentada; sesión presencial/virtual y comprobaciones pendientes de ejecución.
+6. **Cumplimiento de revisiones por pares:** 1/5 (20.00%) — Formalizada revisión de requisitos (cerrada con hallazgos incorporados en v0.2); revisión de código en estado parcial (cubre v0, cambios de CR01 pendientes); diseño, pruebas y liberación pendientes.
+
+---
+
+### 3. Desviaciones Tratadas y Resoluciones
+
+1. **Desviación NC-01 (Reproducibilidad de entorno y BOM en requirements.txt):**
+   - Acciones correctivas ejecutadas: diagnóstico en `evidencias/nc01_analisis.md`, `requirements.txt` en UTF-8 sin BOM con LF, verificación preliminar en venv limpio en `evidencias/pruebas/pytest_v0_venv.txt`.
+   - Estado actual: Abierta — pendiente de verificación formal de cierre por E4.
+2. **Conflicto de Criterios en Solicitud de Cambio CR01:**
+   - Descripción: Durante el refinamiento de CR01, el criterio de paridad byte a byte sin filtro colisionaba potencialmente con la adición de los nuevos campos de resumen (`distrito_filtrado` y `aceptadas_del_distrito`).
+   - Resolución: Aclaración vinculante de E1 en la aprobación v0.3 de CR01: dichos campos solo se imprimen ante filtro activo, garantizando paridad exacta al 100% en ejecuciones sin filtro.
+
+---
+
+### 4. Acciones Abiertas para el Siguiente Ciclo
+
+- [ ] Verificación de cierre formal de NC-01 por E4 Suclle Suca, Michael.
+- [ ] Revisión técnica por pares de los cambios de código y pruebas de CR01 por E4.
+- [ ] Impartición de la sesión de formación de 15 min y registro de asistencia/comprobación (E1).
+- [ ] Ejecución de escenarios del acta de validación con usuario simulado E2 (VAL).
