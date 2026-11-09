@@ -9,7 +9,7 @@
 | **Hora de capturas**| 20:30-20:32 (segun fecha de los archivos) |
 | **Hora del mensaje de E2** | 20:55 (Evidencia_08) |
 | **Commit validado** | `c7989fb` |
-| **Confirmación del acta por E2** | pendiente |
+| **Confirmación del acta por E2** | confirmada (Evidencia_11, 2026-11-09 14:07) |
 
 ## Escenarios de validación
 
@@ -25,4 +25,4 @@
 | Campo               | Valor |
 |---------------------|-------|
 | **Decisión final**  | conforme, segun reporte de E2 |
-| **Observaciones**   | Confirmacion del acta por E2: pendiente. La validacion del usuario simulado no equivale a la aprobacion de una autoridad sanitaria real. Resultados recibidos por mensaje de E2 a las 20:55 (Evidencia_08) para el commit validado c7989fb. Evidencia del mensaje: `evidencias/revisiones/Evidencia_08.png`. |
+| **Observaciones**   | Confirmacion del acta por E2: confirmada (Evidencia_11, 2026-11-09 14:07). La validacion del usuario simulado no equivale a la aprobacion de una autoridad sanitaria real. Resultados recibidos por mensaje de E2 a las 20:55 (Evidencia_08) para el commit validado c7989fb. Evidencia del mensaje: `evidencias/revisiones/Evidencia_08.png`. |

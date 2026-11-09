@@ -4,10 +4,10 @@
 |------------------------------|--------------------------------------------------------------------|
 | ID decisión                  | DAR01                                                              |
 | Título                       | Librería de lectura y procesamiento CSV                            |
-| Estado                       | PROPUESTA — pendiente de confirmación del equipo                   |
-| Participantes de la decisión |                                                                    |
-| Fecha de confirmación        |                                                                    |
-| Decisor final (E1)           |                                                                    |
+| Estado                       | DECIDIDA — Alternativa A aprobada por E1 Borda Espinoza Gabriela  |
+| Participantes de la decisión | E1 Borda Espinoza Gabriela (decisor final)                         |
+| Fecha de confirmación        | 2026-11-09 (fecha real de registro; decision comunicada por E1 el 2026-11-08 ~22:40 segun E1; sin registro previo en el repositorio; registrada el 2026-11-09 15:34:09) |
+| Decisor final (E1)           | E1 Borda Espinoza Gabriela — Alternativa A (biblioteca estandar CSV stdlib) |
 
 ---
 
