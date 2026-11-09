@@ -4,5 +4,5 @@ R02,docs/requisitos/diseno.md,src/panviz/validador.py,"PR-02, PR-03, PR-04 (test
 R03,docs/requisitos/diseno.md,src/panviz/consolidador.py,PR-05 (tests/test_consolidacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
 R04,docs/requisitos/diseno.md,src/panviz/exportador.py,PR-06 (tests/test_reconciliacion_exportacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
 R05,docs/gestion/trazabilidad.csv,pendiente,pendiente,pendiente,pendiente
-CR01,docs/requisitos/diseno.md,"src/panviz/filtro.py, src/panviz/cli.py",PR-07 (tests/test_cr01_filtro_distrito.py),0.2,implementado - verificado por pruebas - pendiente de revision de E4
+CR01,docs/requisitos/diseno.md,"src/panviz/filtro.py, src/panviz/cli.py",PR-07 (tests/test_cr01_filtro_distrito.py),0.2,implementado - verificado - revisado por E4
 

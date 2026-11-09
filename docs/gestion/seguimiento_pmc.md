@@ -81,3 +81,15 @@ Tomados de la medición objetiva en `evidencias/medicion/indicadores_corte2.txt`
 - [ ] Revisión técnica por pares de los cambios de código y pruebas de CR01 por E4.
 - [ ] Impartición de la sesión de formación de 15 min y registro de asistencia/comprobación (E1).
 - [ ] Ejecución de escenarios del acta de validación con usuario simulado E2 (VAL).
+
+
+---
+
+## Corrección posterior al Corte 2 — 2026-11-08 19:41:32
+
+### 1. Reclasificación del Estado del Área REQM
+- **Motivo de la corrección:** Durante la revisión de trazabilidad de Corte 2 se observó que la revisión técnica de E3 (registrada en `Evidencia_03.png` a las 17:47) evaluó la versión `0.1` de `docs/requisitos/requisitos.md`, emitiendo los hallazgos H-01 y H-02. Si bien dichos hallazgos fueron atendidos en la versión `0.2`, la confirmación técnica formal de E3 sobre el texto final de `v0.2` aún se encuentra pendiente.
+- **Acción tomada:** Por rigor metodológico CMMI, el área **REQM** se reclasifica de *demostrada* a **parcial** en `docs/gestion/matriz_brechas_cmmi.csv` y `.md`, y en `docs/gestion/registro_revisiones.csv` se explicita: `parcial: hallazgos H-01 y H-02 incorporados en v0.2; confirmacion de E3 sobre v0.2 pendiente`.
+
+### 2. Consolidación de la Revisión de Código por E4
+- **Actualización:** El producto `codigo` (`src/panviz/`) pasa a estado **cerrada** en `docs/gestion/registro_revisiones.csv` al confirmarse la cobertura completa del código base v0 (Pull Request `Evidencia_02.png` a las 17:22) y de los cambios de CR01 (`Evidencia_06` en Pull Request a las 18:52, commit `859e6bb`).

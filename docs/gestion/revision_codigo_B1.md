@@ -48,3 +48,19 @@ ver comentarios del Pull Request
 |----|-----------------|--------------------------|------------------|-------------|--------|
 |    |                 |                          |                  |             |        |
 
+
+
+---
+
+## Segunda revisión (cambios de CR01)
+
+| Campo                 | Valor                                                         |
+|-----------------------|---------------------------------------------------------------|
+| **Producto revisado** | Código incremental de CR01 (`src/panviz/filtro.py`, `src/panviz/cli.py`, `src/panviz/exportador.py`) |
+| **Commit revisado**   | `859e6bb` (feat: CR01 filtro por distrito con normalizacion y resumen ampliado) |
+| **Autor (rol)**       | E3 Fernandez Huarca, Rodrigo (Diseño y desarrollo)            |
+| **Revisor**           | E4 Suclle Suca, Michael (Calidad y pruebas)                   |
+| **Fecha y hora**      | 2026-11-08 18:52 (Evidencia_06)                               |
+| **Evidencia**         | Evidencia_06 (Pull Request aprobado en GitHub)                |
+| **Decisión**          | aprobado en Pull Request (ver Evidencia_06)                    |
+| **Hallazgos**         | ver comentarios del Pull Request                              |

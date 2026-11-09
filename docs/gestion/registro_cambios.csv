@@ -1,3 +1,3 @@
 id,descripcion,solicitante,fecha,impacto,decision,aprobador,version_afectada,estado
-CR01,Filtro por distrito (--distrito <nombre>) al consolidar,E2 (pendiente de confirmacion),2026-11-08 19:04:02,cli.py consolidador.py resumen.txt diseno.md plan_pruebas.md,aprobado,E1 Borda Espinoza Gabriela,be0f464 (corregida: el commit 47f7caf es anterior a la correccion de entorno NC-01 (be0f464)),aprobado
+CR01,Filtro por distrito (--distrito <nombre>) al consolidar,E2 (pendiente de confirmacion),2026-11-08 19:04:02,cli.py consolidador.py resumen.txt diseno.md plan_pruebas.md,aprobado,E1 Borda Espinoza Gabriela,be0f464 (corregida: el commit 47f7caf es anterior a la correccion de entorno NC-01 (be0f464)),implementado - revisado por E4
 
