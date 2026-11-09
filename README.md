@@ -49,5 +49,5 @@ python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evi
 
 ## Estado
 
-**Proceso v2 propuesto, registro de revisiones formalizado, Corte 2 completado en rama `feature/componente-iras` (19/19 tests passed, REQM demostrado en piloto)**
+**CR01 aprobado con evidencias de revisión (E2, E3, E4); guión de validación, acta B2 y ficha de copia limpia preparados en rama `feature/componente-iras`**
 
