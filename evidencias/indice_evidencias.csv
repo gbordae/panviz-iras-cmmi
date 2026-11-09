@@ -21,4 +21,61 @@ EV19,OT,docs/proceso/formacion/guia_formacion_15min.md,1.0,E1 Borda Espinoza Gab
 EV20,OT,docs/proceso/formacion/comprobacion.md,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
 EV21,OT,docs/proceso/formacion/registro_asistencia.csv,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
 EV22,RSKM,docs/gestion/riesgos.csv,1.0,E1 Borda Espinoza Gabriela,,2026-11-08
-
+EV23,DAR,docs/gestion/decision_dar01.md,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV24,TS,docs/requisitos/diseno.md,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV25,VER,evidencias/ejecucion_v0/consolidado.csv,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV26,VER,evidencias/ejecucion_v0/rechazos.csv,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV27,VER,evidencias/ejecucion_v0/resumen.txt,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08
+EV28,VER,evidencias/pruebas/pytest_v0.txt,1.0,Gabriela Borda,,2026-11-08
+EV29,VER,docs/gestion/plan_pruebas.md,1.0,Gabriela Borda,,2026-11-08
+EV30,VER,docs/gestion/revision_codigo_B1.md,1.0,Gabriela Borda,,2026-11-08
+EV31,PPQA,evidencias/nc01_analisis.md,1.0,Gabriela Borda,,2026-11-08
+EV32,PPQA,evidencias/pruebas/pytest_v0_venv.txt,1.0,Gabriela Borda,,2026-11-08
+EV33,PPQA,docs/gestion/nc01.md,1.0,Gabriela Borda,,2026-11-08
+EV34,CM,docs/gestion/CR01.md,1.0,Gabriela Borda,,2026-11-08
+EV35,CM,docs/gestion/registro_cambios.csv,1.0,Gabriela Borda,,2026-11-08
+EV36,OPF,docs/gestion/diagnostico_brechas.md,1.0,Gabriela Borda,,2026-11-08
+EV37,OPF,docs/gestion/lecciones_articulo.md,1.0,Gabriela Borda,,2026-11-08
+EV38,OPF,docs/gestion/matriz_brechas_cmmi.csv,1.0,Gabriela Borda,,2026-11-08
+EV39,OPF,docs/gestion/matriz_brechas_cmmi.md,1.0,Gabriela Borda,,2026-11-08
+EV40,MA,evidencias/medicion/calcular_indicadores.py,1.0,Gabriela Borda,,2026-11-08
+EV41,MA,evidencias/medicion/indicadores_corte1.txt,1.0,Gabriela Borda,,2026-11-08
+EV42,MA,docs/gestion/indicadores.csv,1.0,Gabriela Borda,,2026-11-08
+EV43,MA,docs/gestion/indicadores.md,1.0,Gabriela Borda,,2026-11-08
+EV44,PMC,docs/gestion/seguimiento_pmc.md,1.0,Gabriela Borda,,2026-11-08
+EV45,REQM,docs/gestion/hallazgos_revision_requisitos.md,1.0,Gabriela Borda,,2026-11-08
+EV46,REQM,docs/requisitos/requisitos.md,0.2,Gabriela Borda,,2026-11-08
+EV47,CM,docs/gestion/CR01.md,0.2,Gabriela Borda,,2026-11-08
+EV48,VER,evidencias/revisiones/Evidencia_01.png,1.0,Gabriela Borda,E4 Suclle Suca Michael,2026-11-08 17:16
+EV49,VER,evidencias/revisiones/Evidencia_02.png,1.0,Gabriela Borda,E4 Suclle Suca Michael,2026-11-08 17:22
+EV50,VER,evidencias/revisiones/Evidencia_03.png,1.0,Gabriela Borda,E3 Fernandez Huarca Rodrigo,2026-11-08 17:47
+EV51,VER,evidencias/revisiones/Evidencia_04.png,1.0,Gabriela Borda,E2 Meza Vizcarra Cielo,2026-11-08 18:42
+EV52,VER,evidencias/pruebas/pytest_v1_cr01.txt,1.0,Gabriela Borda,,2026-11-08
+EV53,VER,evidencias/ejecucion_v1/sin_filtro/consolidado.csv,1.0,Gabriela Borda,,2026-11-08
+EV54,VER,evidencias/ejecucion_v1/distrito_Cercado/consolidado.csv,1.0,Gabriela Borda,,2026-11-08
+EV55,VER,evidencias/ejecucion_v1/distrito_Cayma/consolidado.csv,1.0,Gabriela Borda,,2026-11-08
+EV56,VER,evidencias/ejecucion_v1/distrito_Yanahuara/consolidado.csv,1.0,Gabriela Borda,,2026-11-08
+EV57,OPD,docs/proceso/proceso_estandar_v2.md,2.0,Gabriela Borda,,2026-11-08
+EV58,OPD,docs/proceso/plantillas/plantilla_requisito_v2.md,2.0,Gabriela Borda,,2026-11-08
+EV59,OPD,docs/proceso/plantillas/plantilla_cambio_v2.md,2.0,Gabriela Borda,,2026-11-08
+EV60,OPD,docs/proceso/plantillas/plantilla_pruebas_v2.md,2.0,Gabriela Borda,,2026-11-08
+EV61,OPF,docs/proceso/cambios_v1_a_v2.md,1.0,Gabriela Borda,,2026-11-08
+EV62,VER,docs/gestion/registro_revisiones.csv,1.0,Gabriela Borda,,2026-11-08
+EV63,MA,evidencias/medicion/indicadores_corte2.txt,1.0,Gabriela Borda,,2026-11-08
+EV64,VAL,docs/gestion/guion_validacion_E2.md,1.0,Gabriela Borda,,2026-11-08
+EV65,VAL,docs/gestion/acta_validacion_B2.md,1.0,Gabriela Borda,,2026-11-08
+EV66,CM,docs/gestion/ficha_copia_limpia_E5.md,1.0,Gabriela Borda,,2026-11-08
+EV67,VAL,evidencias/validacion/PruebaUsuario_01.png,1.0,E2 Meza Vizcarra Cielo,,2026-11-08 20:30
+EV68,VAL,evidencias/validacion/PruebaUsuario_02.png,1.0,E2 Meza Vizcarra Cielo,,2026-11-08 20:31
+EV69,VAL,evidencias/validacion/PruebaUsuario_03.png,1.0,E2 Meza Vizcarra Cielo,,2026-11-08 20:31
+EV70,VAL,evidencias/validacion/PruebaUsuario_04.png,1.0,E2 Meza Vizcarra Cielo,,2026-11-08 20:32
+EV71,CM,evidencias/revisiones/Evidencia_05.png,1.0,E3 Fernandez Huarca Rodrigo,,2026-11-08 19:03
+EV72,VER,evidencias/revisiones/Evidencia_06.png,1.0,E4 Suclle Suca Michael,,2026-11-08 pendiente
+EV73,CM,evidencias/revisiones/Evidencia_07.png,1.0,E2 Meza Vizcarra Cielo,,2026-11-08 19:32
+EV74,VAL,evidencias/revisiones/Evidencia_08.png,1.0,E2 Meza Vizcarra Cielo,,2026-11-08 20:55
+EV75,CM,evidencias/revisiones/Evidencia_09.png,1.0,E5 Ccoscco Alvis Italo,,2026-11-08 21:40
+EV76,CM,evidencias/pruebaLimpia/PruebaLimpia.png,1.0,E5 Ccoscco Alvis Italo,,2026-11-08 21:40
+EV77,PPQA,evidencias/revisiones/Evidencia_10.png,1.0,E4 Suclle Suca Michael,,2026-11-08 22:31
+EV78,VAL,evidencias/revisiones/Evidencia_11.png,1.0,E2 Meza Vizcarra Cielo,,2026-11-09 14:07
+EV79,TS,evidencias/revisiones/Evidencia_12.png,1.0,E2 Meza Vizcarra Cielo,,2026-11-09 14:31
+EV80,CM,evidencias/pruebaLimpia/PruebaLimpia_02.png,1.0,E5 Ccoscco Alvis Italo,,2026-11-09

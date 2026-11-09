@@ -22,3 +22,4 @@
 | 3    | E4          | Define plan de regresión     |       |        |
 | 4    | E5          | Identifica versión afectada  |       |        |
 | 5    | E1          | Aprueba o rechaza            |       |        |
+

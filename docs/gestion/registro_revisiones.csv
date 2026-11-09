@@ -1,0 +1,3 @@
+producto,ruta,autor_rol,revisor,evidencia,fecha,cobertura,estado_revision
+requisitos,docs/requisitos/requisitos.md,E2 Requisitos y usuario simulado,E3 Fernandez Huarca Rodrigo,evidencias/revisiones/Evidencia_03.png,2026-11-08 17:47,requisitos R01-R05,parcial: hallazgos H-01 y H-02 incorporados en v0.2; confirmacion de E3 sobre v0.2 pendiente
+diseno,docs/requisitos/diseno.md,E3 Diseno y desarrollo,E2 Meza Vizcarra Cielo,evidencias/revisiones/Evidencia_12.png,2026-11-09 14:31,diseno v0.1 y v0.2,"cerrada (E2 Meza Vizcarra Cielo, Evidencia_12, 2026-11-09 14:31): flujo claro y todo coincide, conforme"

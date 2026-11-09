@@ -31,3 +31,4 @@
 
 Al finalizar la sesión, cada integrante completa la comprobación en
 `docs/proceso/formacion/comprobacion.md`.
+

@@ -1,0 +1,60 @@
+=== Ejecución de Pruebas Pytest v1 tras CR01 — Panviz IRAS ===
+Fecha de ejecución : 2026-11-08 19:05:37
+Python executable   : D:\Unsa\CaS\TrabajoParcial8\.venv\Scripts\python.exe
+sys.prefix          : D:\Unsa\CaS\TrabajoParcial8\.venv
+pytest version      : pytest 9.2.0
+
+============================== SECCIÓN 1: REGRESIÓN PR-01 a PR-06 (12 tests) ==============================
+tests/test_consolidacion.py::test_consolidacion_conocida PASSED          [  5%]
+tests/test_consolidacion.py::test_semana_iso_limite_anio PASSED          [ 10%]
+tests/test_importacion.py::test_importacion_valida PASSED                [ 52%]
+tests/test_importacion.py::test_importacion_contrato_columnas_invalido PASSED [ 57%]
+tests/test_importacion.py::test_importacion_contrato_columnas_faltantes PASSED [ 63%]
+tests/test_reconciliacion_exportacion.py::test_reconciliacion_y_archivos_exportados PASSED [ 68%]
+tests/test_reconciliacion_exportacion.py::test_reconciliacion_descuadre PASSED [ 73%]
+tests/test_validacion.py::test_validacion_campo_obligatorio_vacio PASSED [ 78%]
+tests/test_validacion.py::test_validacion_evento_distinto_iras PASSED    [ 84%]
+tests/test_validacion.py::test_validacion_grupo_etario_fuera_catalogo PASSED [ 89%]
+tests/test_validacion.py::test_validacion_fecha_imposible PASSED         [ 94%]
+tests/test_validacion.py::test_validacion_clave_duplicada PASSED         [100%]
+
+============================== SECCIÓN 2: NUEVAS PRUEBAS PR-07 (CR01) (7 tests) ==============================
+tests/test_cr01_filtro_distrito.py::test_cr01_coincidencia_fila_por_fila_oraculo PASSED [ 15%]
+tests/test_cr01_filtro_distrito.py::test_cr01_suma_tres_distritos_igual_quince PASSED [ 21%]
+tests/test_cr01_filtro_distrito.py::test_cr01_normalizacion_mayusculas_y_espacios PASSED [ 26%]
+tests/test_cr01_filtro_distrito.py::test_cr01_invariabilidad_de_rechazos PASSED [ 31%]
+tests/test_cr01_filtro_distrito.py::test_cr01_resumen_contextual_con_filtro PASSED [ 36%]
+tests/test_cr01_filtro_distrito.py::test_cr01_distrito_sin_registros_aceptados PASSED [ 42%]
+tests/test_cr01_filtro_distrito.py::test_cr01_paridad_byte_a_byte_sin_filtro PASSED [ 47%]
+
+============================== SALIDA COMPLETA DE PYTEST ==============================
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-9.2.0, pluggy-1.7.0 -- D:\Unsa\CaS\TrabajoParcial8\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Unsa\CaS\TrabajoParcial8
+configfile: pytest.ini
+testpaths: tests
+collecting ... collected 19 items
+
+tests/test_consolidacion.py::test_consolidacion_conocida PASSED          [  5%]
+tests/test_consolidacion.py::test_semana_iso_limite_anio PASSED          [ 10%]
+tests/test_cr01_filtro_distrito.py::test_cr01_coincidencia_fila_por_fila_oraculo PASSED [ 15%]
+tests/test_cr01_filtro_distrito.py::test_cr01_suma_tres_distritos_igual_quince PASSED [ 21%]
+tests/test_cr01_filtro_distrito.py::test_cr01_normalizacion_mayusculas_y_espacios PASSED [ 26%]
+tests/test_cr01_filtro_distrito.py::test_cr01_invariabilidad_de_rechazos PASSED [ 31%]
+tests/test_cr01_filtro_distrito.py::test_cr01_resumen_contextual_con_filtro PASSED [ 36%]
+tests/test_cr01_filtro_distrito.py::test_cr01_distrito_sin_registros_aceptados PASSED [ 42%]
+tests/test_cr01_filtro_distrito.py::test_cr01_paridad_byte_a_byte_sin_filtro PASSED [ 47%]
+tests/test_importacion.py::test_importacion_valida PASSED                [ 52%]
+tests/test_importacion.py::test_importacion_contrato_columnas_invalido PASSED [ 57%]
+tests/test_importacion.py::test_importacion_contrato_columnas_faltantes PASSED [ 63%]
+tests/test_reconciliacion_exportacion.py::test_reconciliacion_y_archivos_exportados PASSED [ 68%]
+tests/test_reconciliacion_exportacion.py::test_reconciliacion_descuadre PASSED [ 73%]
+tests/test_validacion.py::test_validacion_campo_obligatorio_vacio PASSED [ 78%]
+tests/test_validacion.py::test_validacion_evento_distinto_iras PASSED    [ 84%]
+tests/test_validacion.py::test_validacion_grupo_etario_fuera_catalogo PASSED [ 89%]
+tests/test_validacion.py::test_validacion_fecha_imposible PASSED         [ 94%]
+tests/test_validacion.py::test_validacion_clave_duplicada PASSED         [100%]
+
+============================= 19 passed in 0.41s ==============================
+

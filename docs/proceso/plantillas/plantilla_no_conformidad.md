@@ -15,3 +15,4 @@
 | Fecha detección | Fecha acción | Fecha cierre | Estado |
 |-----------------|--------------|--------------|--------|
 |                 |              |              |        |
+

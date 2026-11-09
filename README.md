@@ -30,11 +30,23 @@ python -m venv .venv
 # Instalar dependencias
 python -m pip install pytest
 
-# Ejecutar pruebas en modo silencioso
-python -m pytest -q
+# Ejecutar pruebas unitarias y de integración
+python -m pytest -q -v
+```
+
+## Uso
+
+```powershell
+# PowerShell — desde la raíz del proyecto
+$env:PYTHONPATH = "src"
+
+# Ejecución estándar sin filtro
+python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evidencias\ejecucion_v1\sin_filtro
+
+# Ejecución con filtro por distrito (CR01)
+python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evidencias\ejecucion_v1\distrito_Cercado --distrito Cercado
 ```
 
 ## Estado
 
-**En construcción**
-
+**Evidencias de revisión de CR01 (Evidencias 05 a 07), validación funcional con usuario simulado (Evidencia 08) y verificación en copia limpia por E5 (Evidencia 09 y PruebaLimpia) registradas en rama `feature/componente-iras` (B2)**
