@@ -8,6 +8,7 @@ from .exportador import exportar
 from .consolidador import consolidar
 from .validador import validar
 from .importador import importar
+from .filtro import filtrar_por_distrito
 
 
 def main() -> None:
@@ -15,7 +16,7 @@ def main() -> None:
 
     Uso:
         $env:PYTHONPATH = "src"
-        python -m panviz --entrada <csv> --salida <carpeta>
+        python -m panviz --entrada <csv> --salida <carpeta> [--distrito <nombre>]
 
     Códigos de salida:
         0  — OK; reconciliación correcta.
@@ -40,17 +41,47 @@ def main() -> None:
         metavar="CARPETA",
         help="Carpeta de salida para los archivos generados.",
     )
+    parser.add_argument(
+        "--distrito",
+        required=False,
+        default=None,
+        type=str,
+        metavar="DISTRITO",
+        help="Nombre de distrito para filtrar el consolidado (CR01).",
+    )
     args = parser.parse_args()
 
-    filas = importar(args.entrada)           # SystemExit(2) si contrato falla
+    filas = importar(args.entrada)  # SystemExit(2) si contrato falla
     validas, rechazos = validar(filas)
-    consolidado = consolidar(validas)
-    codigo = exportar(consolidado, rechazos, args.salida, total_leidas=len(filas))
 
-    print(f"Panviz: procesadas {len(filas)} filas — "
-          f"aceptadas {len(validas)}, rechazadas {len(rechazos)}.")
+    # Filtrado opcional por distrito (CR01)
+    if args.distrito is not None and args.distrito.strip() != "":
+        filtradas, aceptadas_distrito = filtrar_por_distrito(
+            validas, args.distrito
+        )
+        distrito_nom = args.distrito.strip()
+    else:
+        filtradas = validas
+        aceptadas_distrito = len(validas)
+        distrito_nom = None
+
+    consolidado = consolidar(filtradas)
+    codigo = exportar(
+        consolidado=consolidado,
+        rechazos=rechazos,
+        ruta_salida=args.salida,
+        total_leidas=len(filas),
+        distrito_filtrado=distrito_nom,
+        aceptadas_del_distrito=aceptadas_distrito,
+    )
+
+    det_filtro = f" [filtro distrito: {distrito_nom}]" if distrito_nom else ""
+    print(
+        f"Panviz{det_filtro}: procesadas {len(filas)} filas — "
+        f"aceptadas {len(validas)}, rechazadas {len(rechazos)}, "
+        f"consolidadas {len(filtradas)}."
+    )
 
     if codigo != 0:
         print(f"ERROR: reconciliación fallida (código {codigo}).", file=sys.stderr)
         sys.exit(codigo)
-
