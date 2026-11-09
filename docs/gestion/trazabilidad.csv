@@ -1,5 +1,5 @@
 id_requisito,origen,implementacion,verificacion,version,estado
-R01,docs/requisitos/diseno.md,src/panviz/lector.py,PR-01 (tests/test_importacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
+R01,docs/requisitos/diseno.md,src/panviz/importador.py,PR-01 (tests/test_importacion.py),v0.1 (merge 3e3471b),verificado por pruebas - pendiente de revision de codigo
 R02,docs/requisitos/diseno.md,src/panviz/validador.py,"PR-02, PR-03, PR-04 (tests/test_validacion.py)",pendiente,verificado por pruebas - pendiente de revision de codigo
 R03,docs/requisitos/diseno.md,src/panviz/consolidador.py,PR-05 (tests/test_consolidacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
 R04,docs/requisitos/diseno.md,src/panviz/exportador.py,PR-06 (tests/test_reconciliacion_exportacion.py),pendiente,verificado por pruebas - pendiente de revision de codigo
