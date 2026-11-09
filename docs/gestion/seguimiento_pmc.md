@@ -128,3 +128,24 @@ Tomados de la medición objetiva en `evidencias/medicion/indicadores_corte2.txt`
 - **Área VAL en CMMI:** Pasa de *no evidenciada* a **parcial** en `docs/gestion/matriz_brechas_cmmi.csv` y `.md`.
 - **Acción pendiente:** E2 confirma el acta; E1 aprueba B2 tras la copia limpia de E5; revalidar si cambia `src/`.
 - **Nota metodológica:** La validación del usuario simulado no equivale a la aprobación de una autoridad sanitaria real ni a un aval clínico.
+---
+
+## Corrección y registro de evidencias (Tarea 12b) — 2026-11-08 22:01:23
+
+### 1. Auditoría y Registro de Evidencias Reales de WhatsApp
+- **Evidencia_05 (19:03):** Confirmación técnica de impacto de CR01 por E3 Fernandez Huarca, Rodrigo (`evidencias/revisiones/Evidencia_05.png`).
+- **Evidencia_06 (hora pendiente):** Mensaje de E4 Suclle Suca, Michael sobre los cambios de CR01 (`evidencias/revisiones/Evidencia_06.png`). Commit revisado y hora pendientes de verificar; falta captura del Pull Request.
+- **Evidencia_07 (19:32):** Confirmación de criterios (e), (f) y (g) de CR01 por E2 Meza Vizcarra, Cielo (`evidencias/revisiones/Evidencia_07.png`).
+- **Evidencia_08 (20:55):** Reporte textual de validación funcional V-01 a V-04 por E2 Meza Vizcarra, Cielo (`evidencias/revisiones/Evidencia_08.png`). Horas de capturas de validación corregidas a 20:30, 20:31, 20:31 y 20:32 según marca de archivos en disco.
+- **Evidencia_09 (21:40):** Mensaje de E5 Ccoscco Alvis, Italo informando la ejecución de la verificación en copia limpia (`evidencias/revisiones/Evidencia_09.png`).
+
+### 2. Verificación en Copia Limpia por E5
+- **Ficha técnica:** `docs/gestion/ficha_copia_limpia_E5.md`.
+- **Entorno verificado:** Carpeta `D:\CaS_trabajo_08\copia_limpia`, entorno virtual con `sys.prefix = D:\CaS_trabajo_08\copia_limpia\.venv`.
+- **Resultados de ejecución:** Pytest 9.2.0 con 19 passed en 0.38s. Salida CLI `salida_e5`: leídas 20, aceptadas 15, rechazadas 5, suma 15, diferencia 0.
+- **Pendientes:** Registrar commit clonado y python --version; repetir verificación sobre `main` tras liberación de tag v0.1.
+
+### 3. Ajustes en Matriz de Brechas CMMI-DEV v1.3
+- Restaurada la estructura completa de 18 áreas con niveles y líderes según proceso estándar: PP (nivel 2), SAM (nivel 2, no aplicable justificadamente), IPM (nivel 3), MA (nivel 2, líder E5) y OT (nivel 3, no evidenciada).
+- Áreas CM y PI actualizadas con acción pendiente sobre copia limpia; estado permanece en **parcial**.
+- NC-01 permanece en estado **abierta** (pendiente de verificación formal de cierre por E4).

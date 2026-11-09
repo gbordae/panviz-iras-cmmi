@@ -49,5 +49,4 @@ python -m panviz --entrada datos\notificaciones_iras_sinteticas.csv --salida evi
 
 ## Estado
 
-**CR01 aprobado con evidencias de revisión (E2, E3, E4); guión de validación, acta B2 y ficha de copia limpia preparados en rama `feature/componente-iras`**
-
+**Evidencias de revisión de CR01 (Evidencias 05 a 07), validación funcional con usuario simulado (Evidencia 08) y verificación en copia limpia por E5 (Evidencia 09 y PruebaLimpia) registradas en rama `feature/componente-iras` (B2)**

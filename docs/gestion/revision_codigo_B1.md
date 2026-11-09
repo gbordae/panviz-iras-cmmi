@@ -40,18 +40,18 @@ La revisión de código de la línea base B1 abarca:
 | Campo                 | Valor                                                         |
 |-----------------------|---------------------------------------------------------------|
 | **Producto revisado** | Código incremental de CR01 (`src/panviz/filtro.py`, `src/panviz/cli.py`, `src/panviz/exportador.py`) |
-| **Commit revisado**   | pendiente de verificar según el PR                            |
+| **Commit revisado**   | pendiente                                                     |
 | **Autor (rol)**       | E3 Fernandez Huarca, Rodrigo (Diseño y desarrollo)            |
 | **Revisor**           | E4 Suclle Suca, Michael (Calidad y pruebas)                   |
-| **Fecha y hora**      | pendiente de archivar                                         |
-| **Evidencia**         | captura pendiente de archivar en evidencias/revisiones/       |
-| **Decisión**          | pendiente de verificación de evidencia                         |
-| **Hallazgos**         | ver comentarios del Pull Request                              |
+| **Fecha y hora**      | pendiente                                                     |
+| **Evidencia**         | `evidencias/revisiones/Evidencia_06.png` (mensaje de WhatsApp) |
+| **Decisión**          | parcial: aprobacion de E4 sobre CR01 por mensaje (Evidencia_06), commit revisado pendiente |
+| **Hallazgos**         | mensaje de WhatsApp (Evidencia_06); hora y commit revisado pendientes de verificar; falta captura del Pull Request |
 
 ---
 
 ## 3. Estado de Consolidación
 
 - **Cobertura de código base v0:** Aprobada y respaldada en `evidencias/revisiones/Evidencia_02.png`.
-- **Cobertura de cambios CR01:** Pendiente de archivar la captura de aprobación del PR en `evidencias/revisiones/`.
-- **Estado general en `docs/gestion/registro_revisiones.csv`:** `parcial: aprobacion de E4 sobre CR01 sin captura archivada`.
+- **Cobertura de cambios CR01:** Mensaje de WhatsApp (Evidencia_06); hora y commit revisado pendientes de verificar; falta captura del Pull Request.
+- **Estado general en `docs/gestion/registro_revisiones.csv`:** `parcial: aprobacion de E4 sobre CR01 por mensaje (Evidencia_06), commit revisado pendiente`.

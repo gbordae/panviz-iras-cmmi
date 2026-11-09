@@ -4,8 +4,11 @@
 |--------------------------|----------------------------------------------------------|
 | Responsable verificación | E5 Ccoscco Alvis, Italo (Configuración y medición)       |
 | Repositorio origen       | `https://github.com/gbordae/panviz-iras-cmmi.git`        |
-| Commit o tag clonado     |                                                          |
-| Fecha de verificación    |                                                          |
+| Carpeta de ejecución     | `D:\CaS_trabajo_08\copia_limpia`                         |
+| Commit o tag clonado     | pendiente                                                |
+| Fecha de verificación    | 2026-11-08                                               |
+| Hora del mensaje         | 21:40 (Evidencia_09)                                     |
+| Evidencias asociadas     | `evidencias/revisiones/Evidencia_09.png` y `evidencias/pruebaLimpia/PruebaLimpia.png` |
 
 ---
 
@@ -40,10 +43,12 @@
 
 | Parámetro | Valor observado |
 |---|---|
-| **Python version (`python --version`)** | |
-| **Intérprete / `sys.prefix`** | |
-| **Resultado de pytest (esperado: 19 passed)** | |
-| **Resultado de ejecución CLI** | |
-| **Estado de verificación** | |
+| **Python version (`python --version`)** | pendiente |
+| **Intérprete / `sys.prefix`** | `D:\CaS_trabajo_08\copia_limpia\.venv` |
+| **Resultado de pytest (esperado: 19 passed)** | pytest 9.2.0, 19 passed in 0.38s |
+| **Resultado de ejecución CLI (resumen de salida_e5)** | leidas 20, aceptadas 15, rechazadas 5, suma 15, diferencia 0 |
+| **Estado de verificación** | ejecutado en copia limpia sobre la rama |
 
 ## 3. Observaciones del Verificador (E5)
+
+segun captura de E5
